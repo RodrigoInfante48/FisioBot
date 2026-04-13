@@ -185,6 +185,28 @@
     .play-button {
       animation: pulse-glow 2s infinite;
     }
+
+    /* Scarcity progress bar animated gradient */
+    @keyframes gradient-flow {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .scarcity-bar-fill {
+      background: linear-gradient(
+        90deg,
+        #00E6C7,
+        #00C4B0,
+        #4FFFDA,
+        #FFB800,
+        #E5A500,
+        #00C4B0,
+        #00E6C7
+      );
+      background-size: 300% 100%;
+      animation: gradient-flow 5s ease infinite;
+    }
   </style>
 </head>
 <body class="bg-datapocket-navy text-white min-h-screen">
@@ -624,6 +646,23 @@
           </h2>
           <p class="text-lg text-gray-400 max-w-2xl mx-auto">
             Un solo pago. Para siempre. Sin sorpresas.
+          </p>
+        </div>
+
+        <!-- Scarcity / Progress Bar -->
+        <div class="max-w-4xl mx-auto mb-10 bg-datapocket-navy rounded-2xl px-6 py-5 border border-datapocket-surface-light">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-2 h-2 rounded-full bg-red-400 animate-pulse"></span>
+              <span class="text-sm font-semibold text-gray-300">Precio de lanzamiento</span>
+            </div>
+            <span class="text-sm font-bold text-white">40 de 48 cupos tomados</span>
+          </div>
+          <div class="h-3 bg-datapocket-surface rounded-full overflow-hidden">
+            <div class="scarcity-bar-fill h-full rounded-full" style="width: 83.3%"></div>
+          </div>
+          <p class="text-center text-sm text-gray-400 mt-3">
+            Solo quedan <span class="font-bold text-datapocket-gold">8 cupos</span> a este precio — cuando se acaben, sube.
           </p>
         </div>
 
