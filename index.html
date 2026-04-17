@@ -336,7 +336,7 @@
 
               <!-- Caption below thumbnail -->
               <p class="text-center text-gray-400 text-sm mt-4">
-                Mira cómo Tally → Gemini → Notion automatizan tu anamnesis
+                Mira cómo Tally → Make.com → Gemini AI → Notion generan dos fichas automáticamente
               </p>
             </div>
           </div>
@@ -545,14 +545,13 @@
 
                 <!-- Content -->
                 <h3 class="text-xl font-bold text-white mb-3">
-                  Gemini analiza y genera<br>ficha estructurada
+                  Make.com orquesta.<br>Gemini analiza una sola vez.
                 </h3>
                 <p class="text-gray-400 leading-relaxed mb-4">
-                  La IA extrae alergias, medicamentos, condiciones de riesgo.
-                  Te da un resumen clínico listo para revisar.
+                  Make.com recibe el formulario y llama a Gemini. La IA extrae alergias, medicamentos y factores de riesgo — y genera el contenido para las dos fichas en una sola pasada.
                 </p>
                 <span class="inline-block text-sm text-dentbot-teal font-medium">
-                  ✨ IA procesando
+                  ✨ Una llamada · Dos fichas
                 </span>
               </div>
             </div>
@@ -574,16 +573,90 @@
 
                 <!-- Content -->
                 <h3 class="text-xl font-bold text-white mb-3">
-                  Tú llegas al consultorio<br>con todo listo
+                  Notion recibe<br>dos fichas simultáneas
                 </h3>
                 <p class="text-gray-400 leading-relaxed mb-4">
-                  Abres Notion y ves la ficha completa.
-                  Historial, alertas, tratamiento pendiente. Todo ahí.
+                  El Router de Make las distribuye en paralelo. La ficha PRE te espera antes de la consulta. La ficha POST, lista para compartir con el paciente al terminar.
                 </p>
                 <span class="inline-block text-sm text-dentbot-gold font-medium">
                   ✓ Listo para atender
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Two Fichas Subsection -->
+        <div class="mt-16 max-w-5xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-10">
+            <p class="text-sm font-semibold text-dentbot-teal uppercase tracking-wider mb-3">Lo que llega a Notion</p>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">
+              Dos fichas generadas al mismo tiempo.
+              <span class="block text-xl font-normal text-gray-400 mt-1">Una para ti. Una para el paciente.</span>
+            </h3>
+          </div>
+
+          <!-- PRE / POST cards -->
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <!-- Ficha PRE -->
+            <div class="bg-dentbot-surface rounded-2xl p-7 border border-dentbot-teal/30">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-lg bg-dentbot-teal/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-dentbot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-dentbot-teal font-semibold uppercase tracking-wider">Antes de la consulta</p>
+                  <p class="text-white font-bold">Ficha PRE · Para el odontólogo</p>
+                </div>
+              </div>
+              <ul class="space-y-2.5 text-sm text-gray-400 mb-5">
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Anamnesis estructurada completa</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Alergias y medicamentos activos</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Factores de riesgo identificados</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Alertas clínicas prioritarias</li>
+              </ul>
+              <p class="text-xs text-gray-500 italic">→ La revisas antes de que el paciente llegue al sillón</p>
+            </div>
+
+            <!-- Ficha POST -->
+            <div class="bg-dentbot-surface rounded-2xl p-7 border border-dentbot-gold/30">
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-lg bg-dentbot-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-dentbot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs text-dentbot-gold font-semibold uppercase tracking-wider">Al terminar la consulta</p>
+                  <p class="text-white font-bold">Ficha POST · Para el paciente</p>
+                </div>
+              </div>
+              <ul class="space-y-2.5 text-sm text-gray-400 mb-5">
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Resumen personalizado de la consulta</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Recomendaciones post-tratamiento</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Plan de seguimiento</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Listo para compartir al finalizar la cita</li>
+              </ul>
+              <p class="text-xs text-gray-500 italic">→ Lo compartes con el paciente antes de que salga del consultorio</p>
+            </div>
+          </div>
+
+          <!-- Narrative timeline -->
+          <div class="bg-dentbot-surface-light/50 rounded-2xl px-6 py-5 border border-dentbot-surface-light">
+            <p class="text-center text-sm text-gray-400 mb-4 font-medium">Tu flujo de trabajo con DentBot</p>
+            <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
+              <span class="px-3 py-1.5 bg-dentbot-navy rounded-lg text-white font-medium">Llego al consultorio</span>
+              <svg class="w-4 h-4 text-dentbot-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="px-3 py-1.5 bg-dentbot-teal/15 border border-dentbot-teal/30 rounded-lg text-dentbot-teal font-medium">Reviso la ficha PRE</span>
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="px-3 py-1.5 bg-dentbot-navy rounded-lg text-white font-medium">Atiendo al paciente</span>
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="px-3 py-1.5 bg-dentbot-gold/15 border border-dentbot-gold/30 rounded-lg text-dentbot-gold font-medium">Comparto la ficha POST</span>
+              <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="px-3 py-1.5 bg-dentbot-navy rounded-lg text-white font-medium">Paciente se va con su resumen</span>
             </div>
           </div>
         </div>
@@ -608,7 +681,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
                 </svg>
                 <p class="text-white font-semibold mb-2">Base de datos Notion</p>
-                <p class="text-gray-400 text-sm">Aquí verás la ficha de cada paciente</p>
+                <p class="text-gray-400 text-sm">Aquí verás las dos fichas de cada paciente — PRE para ti, POST para compartir</p>
               </div>
             </div>
           </div>
