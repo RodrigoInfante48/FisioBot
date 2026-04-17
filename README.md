@@ -16,24 +16,29 @@
 
 ## ¿Qué es DentBot?
 
-DentBot es un sistema de automatización de anamnesis para odontólogos, vendido como **producto digital de pago único**. Elimina las preguntas repetitivas antes de cada consulta conectando tres herramientas que ya existen y que cualquier profesional puede usar.
+DentBot es un sistema de automatización de anamnesis para odontólogos, vendido como **producto digital de pago único**. Elimina las preguntas repetitivas antes de cada consulta conectando cuatro herramientas orquestadas por Make.com.
 
-El paciente llena su historia clínica desde el celular **antes de llegar al consultorio**. El odontólogo abre Notion y ya tiene todo listo.
+El paciente llena su historia clínica desde el celular **antes de llegar al consultorio**. DentBot genera automáticamente **dos fichas clínicas simultáneas en Notion**: una para que el odontólogo revise antes de la consulta, y otra para compartir con el paciente al terminar.
 
 ---
 
-## Cómo funciona — 3 pasos
+## Cómo funciona — 4 pasos
 
 ```
-Paciente recibe link    →    IA procesa respuestas    →    Ficha lista en Notion
-      (Tally)                     (Gemini AI)                   (Notion DB)
+Tally → Make.com → Gemini AI → Router (Make)
+                                    ├── Ruta 1: Notion (Ficha PRE — para el odontólogo)
+                                    └── Ruta 2: Notion (Ficha POST — para el paciente)
 ```
+
+**Flujo narrativo completo:**
+Paciente llena Tally → Make procesa → Gemini genera ambas fichas → Router las distribuye a Notion → odontólogo revisa ficha PRE antes de la consulta → termina la consulta → comparte la ficha POST con el paciente.
 
 | Paso | Herramienta | Qué hace |
 |------|-------------|----------|
 | **1. Formulario** | Tally | El paciente recibe el link por WhatsApp y lo llena en ~3 min desde su celular. Sin app, sin login. |
-| **2. Procesamiento IA** | Gemini AI | Extrae alergias, medicamentos, factores de riesgo y genera una ficha clínica estructurada. |
-| **3. Historial** | Notion | Almacena el perfil completo del paciente con alertas, tratamientos anteriores y seguimiento. |
+| **2. Orquestación** | Make.com | Recibe la respuesta de Tally, llama a Gemini AI y distribuye el output a Notion mediante un Router con dos ramas paralelas. |
+| **3. Procesamiento IA** | Gemini AI | Procesa las respuestas una sola vez: extrae alergias, medicamentos, factores de riesgo y genera el contenido para ambas fichas clínicas. |
+| **4. Dos fichas simultáneas** | Notion | El Router de Make crea ambas fichas al mismo tiempo. **Ficha PRE** (para el odontólogo): anamnesis estructurada, alergias, medicamentos, factores de riesgo y alertas clínicas. **Ficha POST** (para el paciente): resumen personalizado, recomendaciones y plan de seguimiento. |
 
 ---
 
@@ -45,7 +50,7 @@ Los odontólogos en consultorios independientes enfrentan tres fricciones diaria
 - **Notas incompletas** — Información crítica (alergias, medicamentos) anotada a mano o recordada de memoria.
 - **Pacientes perdidos** — Sin un sistema centralizado, los pacientes que no agendaron seguimiento simplemente no regresan.
 
-DentBot resuelve los tres con una automatización de pago único, sin suscripción mensual.
+DentBot resuelve los tres generando automáticamente **dos fichas clínicas** por cada paciente — sin intervención manual, con una automatización de pago único y sin suscripción mensual.
 
 ---
 
@@ -97,6 +102,17 @@ DentBot/
 ├── index.html     ← Todo el HTML, CSS y JS en un solo archivo
 └── og-image.png   ← Imagen de previsualización para redes sociales
 ```
+
+**Automatización del producto**
+
+| Tecnología | Uso |
+|-----------|-----|
+| **Make.com** | Orquestador central del flujo. Conecta Tally, Gemini AI y Notion. Contiene el Router que divide el output en dos ramas paralelas hacia Notion. |
+| **Tally** | Formulario de anamnesis que el paciente llena por WhatsApp |
+| **Google Gemini AI** | Modelo de IA que procesa las respuestas del formulario (una sola llamada, genera contenido para ambas fichas) |
+| **Notion** | Base de datos donde se almacenan la Ficha PRE (odontólogo) y la Ficha POST (paciente) |
+
+**Landing page**
 
 | Tecnología | Uso |
 |-----------|-----|
