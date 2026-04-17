@@ -2,13 +2,34 @@
 
 ## Qué es DentBot
 
-DentBot es un sistema de automatización de anamnesis para odontólogos, vendido como producto digital de pago único. El flujo automatiza la historia clínica del paciente antes de que llegue al consultorio usando tres herramientas encadenadas:
+DentBot es un sistema de automatización de anamnesis para odontólogos, vendido como producto digital de pago único. El flujo automatiza la historia clínica del paciente antes de que llegue al consultorio usando cuatro herramientas encadenadas orquestadas por Make.com:
 
 1. **Tally** — El paciente recibe un formulario por WhatsApp y lo llena en 3 minutos desde su celular, sin apps ni login.
-2. **Gemini AI** — Procesa las respuestas, extrae alergias, medicamentos y factores de riesgo, y genera una ficha clínica estructurada.
-3. **Notion** — Almacena el historial completo del paciente con alertas y tratamientos pendientes.
+2. **Make.com** — Orquesta todo el flujo: recibe la respuesta de Tally, llama a Gemini AI, y distribuye el output a Notion mediante un Router con dos ramas paralelas.
+3. **Gemini AI** — Procesa las respuestas una sola vez, extrae alergias, medicamentos y factores de riesgo, y genera el contenido para ambas fichas clínicas.
+4. **Notion** — Recibe las dos fichas simultáneas vía el Router de Make y las almacena en el workspace del odontólogo.
 
-**Propuesta de valor central:** Recuperar 10-15 minutos por consulta eliminando la anamnesis repetitiva, los papeles perdidos y el mal seguimiento del paciente.
+### El flujo técnico completo
+
+```
+Tally → Make.com → Gemini AI → Router (Make)
+                                    ├── Ruta 1: Notion Create → Append → Update  (Ficha PRE, para el odontólogo)
+                                    └── Ruta 2: Notion Create → Append → Update  (Ficha POST, para el paciente)
+```
+
+### Las dos fichas que genera DentBot
+
+**Ficha PRE-consulta (para el odontólogo)**
+Se crea antes de que el paciente llegue al consultorio. Contiene anamnesis estructurada, alergias, medicamentos, factores de riesgo y alertas clínicas. El odontólogo la revisa antes de atender.
+
+**Ficha POST-consulta (para el paciente)**
+Se crea al mismo tiempo en Notion. Contiene un resumen personalizado de la consulta, recomendaciones y plan de seguimiento. El odontólogo la comparte con el paciente al terminar la cita.
+
+### Flujo narrativo completo
+
+Paciente llena Tally → Make procesa → Gemini genera ambas fichas → Router las distribuye a Notion → odontólogo llega y revisa la ficha pre → tiene la consulta → termina y comparte la ficha post con el paciente.
+
+**Propuesta de valor central:** Recuperar 10-15 minutos por consulta eliminando la anamnesis repetitiva, los papeles perdidos y el mal seguimiento del paciente — generando automáticamente dos fichas clínicas (una para el odontólogo, una para el paciente) sin intervención manual.
 
 ---
 
@@ -54,6 +75,13 @@ Cuaderno NotebookLM alimentado con papers científicos, guías clínicas y proto
 
 ## Stack técnico
 
+### Automatización del producto
+- **Make.com** — Orquestador central del flujo. Conecta Tally, Gemini AI y Notion. Contiene el Router que divide el output en dos ramas paralelas hacia Notion.
+- **Tally** — Formulario de anamnesis que el paciente llena por WhatsApp
+- **Google Gemini AI** — Modelo de IA que procesa las respuestas del formulario (una sola llamada, genera contenido para ambas fichas)
+- **Notion** — Base de datos donde se almacenan la Ficha PRE (odontólogo) y la Ficha POST (paciente)
+
+### Landing page
 - **Frontend:** HTML5 + Tailwind CSS (CDN) + Vanilla JavaScript (todo en un solo archivo)
 - **Fuentes:** Plus Jakarta Sans (Google Fonts)
 - **Analytics:** Google Analytics (G-M08G3EFVMM) + Meta Pixel (1304108798298040)
@@ -83,7 +111,7 @@ La landing page `index.html` ES la VSL (Video Sales Letter). Sigue esta estructu
 1. **Header fijo** — Logo DentBot + botón WhatsApp
 2. **Hero** — Headline de dolor + subheadline de solución + demo de video + prueba social (barrios de Bogotá)
 3. **Sección dolor** — 3 problemas específicos del odontólogo (anamnesis repetitiva, notas perdidas, paciente que no volvió)
-4. **Sección solución** — 3 pasos del flujo (Tally → Gemini → Notion) con mockup de Notion
+4. **Sección solución** — 3 pasos del flujo (Tally → Make.com → Gemini → Notion) con mockup de Notion y las dos fichas generadas
 5. **Sección oferta/precios** — Barra de escasez (40/48 cupos) + dos cards de precio + ancla de precio vs software tradicional
 6. **CTA final** — Demo personalizada por WhatsApp
 7. **Barra sticky mobile** — "Empezar ahora" fija en la parte inferior
