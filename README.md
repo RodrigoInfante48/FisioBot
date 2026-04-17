@@ -1,0 +1,202 @@
+<div align="center">
+
+# 🦷 DentBot
+
+### Anamnesis automatizada para odontólogos
+
+**Recupera 10–15 minutos por consulta.** Sin papel, sin repetición, sin información perdida.
+
+[![Live Demo](https://img.shields.io/badge/🌐_Landing_Page-Live-00E6C7?style=for-the-badge)](https://rodrigoinfante48.github.io/DentBot/)
+[![Hotmart](https://img.shields.io/badge/💳_Comprar_en-Hotmart-FFB800?style=for-the-badge)](https://pay.hotmart.com/X105362860D)
+[![WhatsApp](https://img.shields.io/badge/💬_Soporte-WhatsApp-25D366?style=for-the-badge)](https://wa.me/573209974750)
+
+</div>
+
+---
+
+## ¿Qué es DentBot?
+
+DentBot es un sistema de automatización de anamnesis para odontólogos, vendido como **producto digital de pago único**. Elimina las preguntas repetitivas antes de cada consulta conectando tres herramientas que ya existen y que cualquier profesional puede usar.
+
+El paciente llena su historia clínica desde el celular **antes de llegar al consultorio**. El odontólogo abre Notion y ya tiene todo listo.
+
+---
+
+## Cómo funciona — 3 pasos
+
+```
+Paciente recibe link    →    IA procesa respuestas    →    Ficha lista en Notion
+      (Tally)                     (Gemini AI)                   (Notion DB)
+```
+
+| Paso | Herramienta | Qué hace |
+|------|-------------|----------|
+| **1. Formulario** | Tally | El paciente recibe el link por WhatsApp y lo llena en ~3 min desde su celular. Sin app, sin login. |
+| **2. Procesamiento IA** | Gemini AI | Extrae alergias, medicamentos, factores de riesgo y genera una ficha clínica estructurada. |
+| **3. Historial** | Notion | Almacena el perfil completo del paciente con alertas, tratamientos anteriores y seguimiento. |
+
+---
+
+## El problema que resuelve
+
+Los odontólogos en consultorios independientes enfrentan tres fricciones diarias:
+
+- **Anamnesis repetitiva** — Las mismas preguntas de salud en cada consulta, tomando 10–15 minutos de silla.
+- **Notas incompletas** — Información crítica (alergias, medicamentos) anotada a mano o recordada de memoria.
+- **Pacientes perdidos** — Sin un sistema centralizado, los pacientes que no agendaron seguimiento simplemente no regresan.
+
+DentBot resuelve los tres con una automatización de pago único, sin suscripción mensual.
+
+---
+
+## Productos y precios
+
+<table>
+<tr>
+<th>Plan</th>
+<th>Precio</th>
+<th>Incluye</th>
+<th>Link</th>
+</tr>
+<tr>
+<td><b>Self-Setup</b></td>
+<td><b>$9.99 USD</b></td>
+<td>
+  ✅ Plantilla del formulario Tally<br>
+  ✅ Instrucciones paso a paso<br>
+  ✅ Acceso a comunidad WhatsApp<br>
+  ✅ Actualizaciones futuras
+</td>
+<td><a href="https://pay.hotmart.com/U105362980Y">Comprar →</a></td>
+</tr>
+<tr>
+<td><b>Setup Completo</b> ⭐</td>
+<td><b>$33 USD</b></td>
+<td>
+  ✅ Todo lo del Self-Setup<br>
+  ✅ Configuración completa por el equipo<br>
+  ✅ Logo y colores del consultorio<br>
+  ✅ Sesión de onboarding (30 min)<br>
+  ✅ Soporte prioritario por 30 días<br>
+  🎁 <b>DentBot Copilot gratis</b>
+</td>
+<td><a href="https://pay.hotmart.com/X105362860D">Comprar →</a></td>
+</tr>
+</table>
+
+> **DentBot Copilot** — Cuaderno NotebookLM alimentado con papers científicos, guías clínicas y protocolos de expertos en odontología. Consulta con IA entre paciente y paciente.
+
+---
+
+## Stack técnico
+
+Este repositorio contiene la **landing page** del producto.
+
+```
+DentBot/
+├── index.html     ← Todo el HTML, CSS y JS en un solo archivo
+└── og-image.png   ← Imagen de previsualización para redes sociales
+```
+
+| Tecnología | Uso |
+|-----------|-----|
+| **HTML5** | Estructura de la página |
+| **Tailwind CSS** (CDN) | Estilos — todo inline, sin build step |
+| **Plus Jakarta Sans** | Tipografía (Google Fonts) |
+| **Vanilla JavaScript** | Interactividad (sin frameworks) |
+| **Google Analytics** | `G-M08G3EFVMM` |
+| **Meta Pixel** | `1304108798298040` |
+| **GitHub Pages** | Deploy desde rama `main` |
+
+### Paleta de colores
+
+| Token | Hex | Uso |
+|-------|-----|-----|
+| `navy` | `#1a1a2e` | Fondo principal |
+| `navy-dark` | `#0f0f1a` | Fondo oscuro |
+| `surface` | `#16213e` | Cards y secciones |
+| `surface-light` | `#1f2f52` | Hover states |
+| `teal` | `#00E6C7` | Acento principal, CTAs |
+| `teal-dark` | `#00C4B0` | Hover del acento |
+| `gold` | `#FFB800` | Acento secundario, badges |
+| `gold-dark` | `#E5A500` | Hover del gold |
+
+---
+
+## Desarrollo local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/rodrigoinfante48/DentBot.git
+cd DentBot
+
+# Abrir en el navegador (sin servidor necesario)
+open index.html
+# o en Linux:
+xdg-open index.html
+```
+
+No hay dependencias que instalar. Tailwind carga desde CDN.
+
+---
+
+## Flujo de trabajo Git
+
+```bash
+# 1. Crear rama de trabajo
+git checkout -b claude/<descripcion-corta>
+
+# 2. Editar index.html
+# ... cambios ...
+
+# 3. Commit
+git add index.html
+git commit -m "descripción del cambio"
+git push -u origin claude/<descripcion-corta>
+
+# 4. Mergear a main para que se refleje en la página pública
+git checkout main
+git pull origin main
+git merge claude/<descripcion-corta> --no-ff
+git push -u origin main
+```
+
+> La landing live se publica automáticamente desde la rama `main` vía GitHub Pages.
+
+---
+
+## Reglas del proyecto
+
+- **Un solo archivo** — Todo el código vive en `index.html`. No crear archivos CSS o JS separados.
+- **No cambiar links de pago** sin confirmación explícita del usuario.
+- **No modificar** los IDs de Analytics o Meta Pixel.
+- **No agregar dependencias** externas más allá de las existentes (Tailwind CDN, Google Fonts).
+- **Siempre mergear a `main`** — Los cambios solo son visibles en producción cuando llegan a `main`.
+
+---
+
+## Mercado objetivo
+
+- **Quién:** Odontólogos independientes con consultorio propio
+- **Dónde:** Bogotá, Colombia — Usaquén, Chapinero, Cedritos, Chía
+- **Dolor:** Tiempo perdido en preguntas repetitivas, notas incompletas y pacientes que no regresan
+
+---
+
+## Contacto
+
+| Canal | Detalle |
+|-------|---------|
+| **WhatsApp** | [+57 320 997 4750](https://wa.me/573209974750) |
+| **Linktree** | [linktr.ee/dailyduty](https://linktr.ee/dailyduty) |
+| **Marca** | DailyDuty / Instituto para el Desarrollo Diario |
+
+---
+
+<div align="center">
+
+**DentBot** · Hecho con 🦷 por [DailyDuty](https://linktr.ee/dailyduty)
+
+*Automatiza lo repetitivo. Enfócate en el paciente.*
+
+</div>
