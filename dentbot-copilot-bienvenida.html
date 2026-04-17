@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentBot Copilot — Guía de Acceso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:        #1a1a2e;
+      --navy-dark:   #0f0f1a;
+      --surface:     #16213e;
+      --surface-lt:  #1f2f52;
+      --teal:        #00E6C7;
+      --teal-dark:   #00C4B0;
+      --gold:        #FFB800;
+      --gold-dark:   #E5A500;
+      --text-primary: #f0f4ff;
+      --text-muted:   #8a9abf;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--navy-dark);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Print ─────────────────────────────────────── */
+    @media print {
+      body { background: white; color: #111; }
+      .page { box-shadow: none; max-width: 100%; padding: 40px 48px; }
+      .no-print { display: none; }
+      .divider { border-color: #ddd; }
+      .label { color: #888; }
+      .muted { color: #555; }
+      .badge-teal { background: #e0faf6; color: #007a6b; border: 1px solid #a5e8df; }
+      .badge-gold { background: #fff8e0; color: #7a5c00; border: 1px solid #f0d060; }
+      .access-block { background: #f5f5f5; border: 2px solid #ccc; }
+      .warning-block { background: #fff3cd; border: 1px solid #f0c800; }
+      .warning-text { color: #5a4200; }
+      .cta-btn { background: #111; color: white; }
+      .footer { border-top: 1px solid #ddd; color: #888; }
+      h1, h2, h3 { color: #111; }
+      .accent-teal { color: #007a6b; }
+      .accent-gold { color: #a67c00; }
+    }
+
+    /* ── Layout ─────────────────────────────────────── */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 48px 72px;
+      background: var(--navy);
+      min-height: 100vh;
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 56px;
+    }
+
+    .logo {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+
+    .logo span {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .doc-id {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ── Hero ───────────────────────────────────────── */
+    .hero {
+      margin-bottom: 52px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--text-muted);
+      max-width: 560px;
+    }
+
+    .accent-teal { color: var(--teal); }
+    .accent-gold { color: var(--gold); }
+
+    /* ── Divider ─────────────────────────────────────── */
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      margin: 44px 0;
+    }
+
+    /* ── Section ─────────────────────────────────────── */
+    .section { margin-bottom: 44px; }
+
+    .section-number {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-primary);
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    p + p { margin-top: 12px; }
+
+    /* ── Knowledge grid ──────────────────────────────── */
+    .knowledge-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .knowledge-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+
+    .ki-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+
+    .ki-icon.teal { background: rgba(0,230,199,0.12); }
+    .ki-icon.gold { background: rgba(255,184,0,0.12); }
+    .ki-icon.blue { background: rgba(100,140,255,0.12); }
+
+    .ki-body h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .ki-body p {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    /* ── Use-case list ───────────────────────────────── */
+    .use-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .use-list li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .use-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    .use-content h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 3px;
+    }
+
+    .use-content p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ── Warning block ───────────────────────────────── */
+    .warning-block {
+      background: rgba(255,184,0,0.06);
+      border: 1px solid rgba(255,184,0,0.25);
+      border-left: 3px solid var(--gold);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-top: 20px;
+    }
+
+    .warning-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .warning-text {
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: #d4b060;
+    }
+
+    /* ── CTA button ──────────────────────────────────── */
+    .cta-wrap {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--navy-dark);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 16px 36px;
+      border-radius: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .cta-btn:hover { background: var(--teal-dark); }
+
+    .cta-sub {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ── Badges ──────────────────────────────────────── */
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    .badge-teal {
+      background: rgba(0,230,199,0.1);
+      color: var(--teal);
+      border: 1px solid rgba(0,230,199,0.25);
+    }
+
+    .badge-gold {
+      background: rgba(255,184,0,0.1);
+      color: var(--gold);
+      border: 1px solid rgba(255,184,0,0.25);
+    }
+
+    /* ── Footer ──────────────────────────────────────── */
+    .footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      margin-top: 64px;
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .footer p {
+      font-size: 11px;
+      color: rgba(138,154,191,0.5);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Label ───────────────────────────────────────── */
+    .label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 600px) {
+      .page { padding: 36px 24px 56px; }
+      .header { flex-direction: column; align-items: flex-start; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <!-- ── Header ───────────────────────────────────── -->
+    <header class="header">
+      <div class="logo">Dent<span>Bot</span> <span style="margin-left:6px;">Copilot</span></div>
+      <div class="doc-id">Documento de acceso · Confidencial</div>
+    </header>
+
+    <!-- ── Hero ─────────────────────────────────────── -->
+    <section class="hero">
+      <p class="eyebrow">Bienvenida exclusiva</p>
+      <h1>Tu asistente clínico.<br /><span class="accent-teal">Siempre disponible.</span></h1>
+      <p class="hero-sub">
+        Has adquirido acceso a una herramienta diseñada para elevar el estándar de tu práctica clínica.
+        Lo que tienes en tus manos no es un simple recurso de consulta — es una base de conocimiento
+        odontológico de nivel experto, accesible con lenguaje natural en cuestión de segundos.
+      </p>
+      <div class="badge-row">
+        <span class="badge badge-teal">Google NotebookLM</span>
+        <span class="badge badge-teal">IA Clínica Entrenada</span>
+        <span class="badge badge-gold">Uso Individual</span>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── Sección 01 ─────────────────────────────── -->
+    <section class="section">
+      <p class="section-number">01</p>
+      <h2>¿Qué es DentBot Copilot?</h2>
+      <p>
+        DentBot Copilot es un asistente de Inteligencia Artificial alojado de forma segura en
+        <strong style="color:var(--text-primary)">Google NotebookLM</strong>, entrenado exclusivamente
+        con una biblioteca curada de protocolos odontológicos rigurosos seleccionados por especialistas.
+      </p>
+      <p>
+        No busca en internet. No improvisa. Solo responde con base en la bibliografía clínica que
+        conforma su base de conocimiento — lo que garantiza respuestas precisas, trazables y
+        alineadas con los estándares de tu profesión.
+      </p>
+
+      <div class="knowledge-grid">
+
+        <div class="knowledge-item">
+          <div class="ki-icon teal">⚖️</div>
+          <div class="ki-body">
+            <h3>Marco legal y normativo</h3>
+            <p>
+              Guías para el correcto diligenciamiento de la Historia Clínica y el Consentimiento
+              Informado según normativas de México, Perú y estándares internacionales — para que tu
+              documentación sea irrebatible ante cualquier auditoria o proceso legal.
+            </p>
+          </div>
+        </div>
+
+        <div class="knowledge-item">
+          <div class="ki-icon gold">🩺</div>
+          <div class="ki-body">
+            <h3>Paciente médicamente complejo</h3>
+            <p>
+              Protocolos de diagnóstico y manejo para casos críticos: alergias a antibióticos
+              (amoxicilina, clindamicina), uso de bifosfonatos, riesgo de sangrado y coagulopatías.
+              Decisiones clínicas respaldadas por evidencia, no por intuición.
+            </p>
+          </div>
+        </div>
+
+        <div class="knowledge-item">
+          <div class="ki-icon blue">🔬</div>
+          <div class="ki-body">
+            <h3>Primera visita y retención</h3>
+            <p>
+              Protocolos de atención inicial y exploración intra/extraoral diseñados para maximizar
+              la percepción de valor por parte del paciente y aumentar su tasa de retorno al consultorio.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── Sección 02 ─────────────────────────────── -->
+    <section class="section">
+      <p class="section-number">02</p>
+      <h2>Cómo sacarle el mayor provecho</h2>
+      <p>
+        DentBot Copilot está pensado para el ritmo real del consultorio — consultas rápidas entre
+        paciente y paciente, sin perder tiempo buscando en manuales o PDFs desactualizados.
+      </p>
+
+      <ul class="use-list">
+
+        <li>
+          <div class="use-dot"></div>
+          <div class="use-content">
+            <h3>Consultas en tiempo real</h3>
+            <p>
+              Antes de atender a un paciente complejo, pregúntale al Copilot interacciones
+              medicamentosas específicas, contraindicaciones o el paso a paso de un protocolo de
+              emergencia. Respuesta inmediata, sin salir de tu flujo de trabajo.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="use-dot"></div>
+          <div class="use-content">
+            <h3>Auditoría legal de notas clínicas</h3>
+            <p>
+              Describe cómo estás registrando tus evoluciones y pídele al Copilot que evalúe si
+              cumplen con los estándares de protección y confidencialidad del paciente — antes de
+              que sea un problema.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="use-dot"></div>
+          <div class="use-content">
+            <h3>Capacitación de personal auxiliar</h3>
+            <p>
+              Solicita resúmenes simplificados de los protocolos de primera visita o exploración
+              clínica para entrenar a tus asistentes dentales. Convierte conocimiento técnico
+              en instrucciones claras y ejecutables.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div class="use-dot"></div>
+          <div class="use-content">
+            <h3>Preparación de consentimientos informados</h3>
+            <p>
+              Pide al Copilot el lenguaje exacto que debe incluir un consentimiento para un
+              procedimiento específico — resección, extracción quirúrgica, blanqueamiento — y
+              adapta tus plantillas en minutos.
+            </p>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── Sección 03 ─────────────────────────────── -->
+    <section class="section">
+      <p class="section-number">03</p>
+      <h2>Términos de acceso y confidencialidad</h2>
+      <p>
+        DentBot Copilot es una herramienta de uso exclusivo y personal. Tu acceso está
+        gestionado de forma individual para garantizar la integridad de la base de conocimiento
+        y el valor de lo que adquiriste. Lee con atención lo siguiente:
+      </p>
+
+      <div class="warning-block">
+        <p class="warning-label">Política de acceso — Vinculante</p>
+        <p class="warning-text">
+          El acceso a este cuaderno clínico en NotebookLM es de uso individual y estrictamente
+          confidencial. Tu enlace de acceso único está encriptado y vinculado a tu ID de compra
+          en Hotmart. Compartir este enlace en grupos públicos, foros o con terceros no autorizados
+          resultará en la <strong>revocación automática, inmediata y permanente</strong> de tu
+          acceso a esta base de datos y a todas las futuras actualizaciones de los protocolos clínicos.
+        </p>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ── Sección 04 — CTA ───────────────────────── -->
+    <section class="section">
+      <p class="section-number">04</p>
+      <h2>Tu acceso</h2>
+      <p>
+        Tu enlace personalizado está listo. Accede desde cualquier dispositivo — computador,
+        tablet o celular. No requiere instalación. Solo abre el enlace e ingresa con tu cuenta
+        de Google para comenzar.
+      </p>
+
+      <div class="cta-wrap">
+        <!-- INSERTAR HIPERVÍNCULO FINAL EN EL BOTÓN -->
+        <a class="cta-btn" href="#ENLACE-AQUI" target="_blank" rel="noopener">
+          Acceder a DentBot Copilot
+        </a>
+        <p class="cta-sub">Acceso seguro vía Google NotebookLM · Uso individual</p>
+      </div>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────── -->
+    <footer class="footer">
+      <p>DentBot by DailyDuty · Instituto para el Desarrollo Diario</p>
+      <p>Documento confidencial · No distribuir</p>
+    </footer>
+
+  </main>
+</body>
+</html>
