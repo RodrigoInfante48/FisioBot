@@ -64,18 +64,6 @@ DentBot resuelve los tres generando automáticamente **dos fichas clínicas** po
 <th>Link</th>
 </tr>
 <tr>
-<td><b>Self-Setup</b></td>
-<td><b>$9.99 USD</b></td>
-<td>
-  ✅ Plantilla del formulario Tally<br>
-  ✅ Instrucciones paso a paso<br>
-  ✅ Acceso a comunidad WhatsApp<br>
-  ✅ Actualizaciones futuras<br>
-  ➕ <b>DentBot Copilot disponible como add-on</b> (order bump en el checkout)
-</td>
-<td><a href="https://pay.hotmart.com/U105362980Y">Comprar →</a></td>
-</tr>
-<tr>
 <td><b>Setup Completo</b> ⭐</td>
 <td><b>$33 USD</b></td>
 <td>
@@ -87,6 +75,18 @@ DentBot resuelve los tres generando automáticamente **dos fichas clínicas** po
   🎁 <b>DentBot Copilot incluido GRATIS</b>
 </td>
 <td><a href="https://pay.hotmart.com/X105362860D">Comprar →</a></td>
+</tr>
+<tr>
+<td><b>Self-Setup</b></td>
+<td><b>$9.99 USD</b></td>
+<td>
+  ✅ Plantilla del formulario Tally<br>
+  ✅ Instrucciones paso a paso<br>
+  ✅ Acceso a comunidad WhatsApp<br>
+  ✅ Actualizaciones futuras<br>
+  ➕ <b>DentBot Copilot disponible como add-on</b> (order bump en el checkout)
+</td>
+<td><a href="https://pay.hotmart.com/U105362980Y">Comprar →</a></td>
 </tr>
 </table>
 
