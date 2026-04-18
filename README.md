@@ -70,7 +70,8 @@ DentBot resuelve los tres generando automáticamente **dos fichas clínicas** po
   ✅ Plantilla del formulario Tally<br>
   ✅ Instrucciones paso a paso<br>
   ✅ Acceso a comunidad WhatsApp<br>
-  ✅ Actualizaciones futuras
+  ✅ Actualizaciones futuras<br>
+  ➕ <b>DentBot Copilot disponible como add-on</b> (order bump en el checkout)
 </td>
 <td><a href="https://pay.hotmart.com/U105362980Y">Comprar →</a></td>
 </tr>
@@ -83,13 +84,50 @@ DentBot resuelve los tres generando automáticamente **dos fichas clínicas** po
   ✅ Logo y colores del consultorio<br>
   ✅ Sesión de onboarding (30 min)<br>
   ✅ Soporte prioritario por 30 días<br>
-  🎁 <b>DentBot Copilot gratis</b>
+  🎁 <b>DentBot Copilot incluido GRATIS</b>
 </td>
 <td><a href="https://pay.hotmart.com/X105362860D">Comprar →</a></td>
 </tr>
 </table>
 
-> **DentBot Copilot** — Cuaderno NotebookLM alimentado con papers científicos, guías clínicas y protocolos de expertos en odontología. Consulta con IA entre paciente y paciente.
+---
+
+## 🤖 DentBot Copilot — Asistente clínico con IA
+
+**Tu asistente clínico. Siempre disponible.**
+
+DentBot Copilot es un asistente de IA alojado en **Google NotebookLM**, entrenado exclusivamente con una biblioteca curada de protocolos odontológicos rigurosos seleccionados por especialistas.
+
+> **No busca en internet. No improvisa.** Solo responde con base en la bibliografía clínica que conforma su base de conocimiento — respuestas precisas, trazables y alineadas con los estándares de la profesión.
+
+### Áreas de conocimiento
+
+| Área | Descripción |
+|------|-------------|
+| ⚖️ **Marco legal y normativo** | Historia Clínica y Consentimiento Informado según normativas de México, Perú y estándares internacionales. Documentación irrebatible ante auditorías y procesos legales. |
+| 🩺 **Paciente médicamente complejo** | Protocolos de diagnóstico y manejo para casos críticos: alergias a antibióticos (amoxicilina, clindamicina), uso de bifosfonatos, riesgo de sangrado y coagulopatías. Decisiones clínicas respaldadas por evidencia. |
+| 🔬 **Primera visita y retención** | Protocolos de atención inicial y exploración intra/extraoral para maximizar la percepción de valor del paciente y aumentar su tasa de retorno al consultorio. |
+
+### Casos de uso principales
+
+1. **Consultas en tiempo real** — Antes de atender un paciente complejo: interacciones medicamentosas, contraindicaciones, paso a paso de un protocolo de emergencia. Respuesta inmediata, sin salir del flujo de trabajo.
+2. **Auditoría legal de notas clínicas** — Evalúa si las evoluciones cumplen estándares de protección y confidencialidad antes de que sea un problema.
+3. **Capacitación de personal auxiliar** — Resúmenes simplificados de protocolos para entrenar asistentes dentales. Convierte conocimiento técnico en instrucciones claras y ejecutables.
+4. **Preparación de consentimientos informados** — Lenguaje exacto para procedimientos específicos (resección, extracción quirúrgica, blanqueamiento).
+
+### Acceso y entrega
+
+- Alojado en Google NotebookLM — abre en cualquier dispositivo con cuenta de Google, sin instalación
+- Enlace único encriptado, vinculado al ID de compra en Hotmart
+- **Política de acceso vinculante:** compartir el enlace resulta en revocación automática, inmediata y permanente del acceso y futuras actualizaciones
+- Documento de onboarding enviado al comprador: `DentBot Copilot — Guía de Acceso.pdf`
+
+### Estrategia comercial
+
+| Plan | Acceso al Copilot |
+|------|-------------------|
+| **Setup Completo ($33)** | 🎁 Incluido gratis como bono |
+| **Self-Setup ($9.99)** | ➕ Disponible como order bump en el checkout de Hotmart |
 
 ---
 
