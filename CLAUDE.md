@@ -33,9 +33,27 @@ Paciente llena Tally → Make procesa → Gemini genera ambas fichas → Router 
 
 ---
 
+## Fundador, visión y metas de negocio
+
+**Fundador:** Rodrigo Infante — DailyDuty / Instituto para el Desarrollo Diario
+
+### La misión
+DentBot nació con una misión clara: **ayudar a la mayor cantidad posible de odontólogos en Colombia y en el mundo** a recuperar su tiempo, elevar su estándar clínico y darle a cada paciente una experiencia que los haga volver. No es solo un producto digital — es una declaración de intenciones sobre cómo debería funcionar la odontología moderna.
+
+### Metas de negocio (norte del proyecto)
+- **Volumen:** Vender muchísimas licencias — el modelo de pago único y precio accesible está diseñado para escalar masivamente sin fricción
+- **Impacto geográfico:** Arrancar en Bogotá (Usaquén, Chapinero, Cedritos, Chía), expandir a toda Colombia, y después a México, Perú y el resto de Latinoamérica (el Copilot ya incluye marcos legales de México y Perú como señal de esa intención)
+- **Impacto real:** Que cada odontólogo que use DentBot recupere 10-15 minutos por consulta y le dé a su paciente una experiencia que ningún consultorio sin IA puede igualar
+
+### Por qué esto importa al desarrollar
+Cada decisión de diseño, copy y funcionalidad debe estar orientada a **remover fricción de compra** y a **maximizar el valor percibido**. El producto es barato pero debe sentirse premium. El onboarding debe ser tan simple que el odontólogo más ocupado del mundo lo active en minutos.
+
+---
+
 ## Mercado objetivo
 
-- Odontólogos en Bogotá, Colombia (Usaquén, Chapinero, Cedritos, Chía)
+- Odontólogos en Bogotá, Colombia (Usaquén, Chapinero, Cedritos, Chía) — mercado inicial
+- Expansión planeada: Colombia completa → México → Perú → resto de Latinoamérica
 - Perfil: profesional independiente con consultorio propio, no grandes clínicas
 - Dolor principal: tiempo perdido en preguntas repetitivas, notas incompletas y pacientes que no regresan
 
@@ -92,6 +110,59 @@ Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente 
 
 ---
 
+## Proceso de onboarding post-venta
+
+Lo que recibe cada comprador inmediatamente después de pagar en Hotmart.
+
+### Self-Setup ($9.99)
+El comprador recibe `DentBot_Plantilla_Bienvenida.pdf` con:
+1. **Acceder al link de DentBot** — formulario Tally preconfigurado
+2. **Registrar un paciente de prueba** — ficticio o real; la IA genera ambas fichas en segundos
+3. **Revisar las fichas en Notion** — Ficha PRE (para el odontólogo) y Ficha POST (para el paciente)
+
+**Tips clave que se le comunican al comprador:**
+- Ser detallado en el formulario = fichas más precisas
+- Compartir la ficha POST por WhatsApp o imprimirla = diferenciador frente a otros consultorios
+- Revisar la ficha PRE 10 minutos antes de cada cita = llegar preparado
+- Funciona perfecto desde el celular, sin computador
+
+### Setup Completo ($33)
+El comprador recibe `DentBot_Premium_Bienvenida.pdf` con instrucciones para agendar. El proceso es:
+1. **WhatsApp al fundador** — mensaje prefabricado, solo presionar enviar
+2. **Respuesta en menos de 2 horas** — Rodrigo confirma la compra y coordina horario
+3. **Sesión de set-up en vivo (20-40 min)** — configuración adaptada a la especialidad, tipo de pacientes y flujo de trabajo del odontólogo; formulario personalizado con las preguntas relevantes para su práctica; fichas con el nombre e identidad del consultorio
+4. **Prueba con paciente real o ficticio** — se valida que todo funciona antes de terminar
+5. **Soporte prioritario activo** — cualquier ajuste posterior tiene respuesta prioritaria
+
+### DentBot Copilot (bono del $33 / order bump del $9.99)
+El comprador recibe `DentBot Copilot — Guía de Acceso.pdf` con:
+- Enlace único encriptado al cuaderno en Google NotebookLM
+- Vinculado al ID de compra en Hotmart (política anti-sharing)
+- Acceso inmediato desde cualquier dispositivo con cuenta Google
+
+---
+
+## Voz y tono de marca
+
+DentBot habla como un socio, no como un proveedor de software. El tono es cálido, directo y respetuoso del tiempo del odontólogo. Nunca técnico por el gusto de serlo.
+
+### Frases clave de la marca (usar como referencia de copy)
+- *"DentBot no es solo una herramienta, es una declaración de intenciones. Estás diciéndole a tus pacientes: 'me importas lo suficiente como para prepararme antes de atenderte.'"*
+- *"Un paciente que se siente escuchado y un odontólogo que llega preparado."*
+- *"Cuando elegiste DentBot Premium, no compraste un producto, compraste un socio para tu consultorio."*
+- *"Tu éxito con DentBot es mi éxito. Así de simple."*
+- *"Menos tiempo buscando historiales. Más tiempo conectando con tu paciente."*
+- *"No todos los profesionales se atreven a modernizar su flujo de trabajo."* (validación al comprador)
+
+### Principios de comunicación
+- **Hablarle al odontólogo como Doctor(a)** — respeto profesional, no condescendencia
+- **Enfocarse en el resultado emocional**, no en la tecnología — el odontólogo no compra automatización, compra tiempo y tranquilidad
+- **Simplicidad radical en el onboarding** — "no necesitas configurar nada, no necesitas ver tutoriales"
+- **Personalización como argumento de venta** — DentBot se adapta al consultorio, no al revés
+- **El paciente como beneficiario final** — cada feature se explica desde el impacto en la experiencia del paciente
+
+---
+
 ## Stack técnico
 
 ### Automatización del producto
@@ -145,10 +216,28 @@ La landing page `index.html` ES la VSL (Video Sales Letter). Sigue esta estructu
 
 ## Contacto y marca
 
+- **Fundador:** Rodrigo Infante
 - **WhatsApp:** +57 320 997 4750
+- **Email:** roesinf2@gmail.com
 - **Marca paraguas:** DailyDuty / Instituto para el Desarrollo Diario
 - **Linktree:** linktr.ee/dailyduty
 - **OG image:** `og-image.png` (900×1200px)
+
+### Documentos de entrega al comprador
+| Archivo | Plan | Contenido |
+|---------|------|-----------|
+| `DentBot_Plantilla_Bienvenida.pdf` | Self-Setup ($9.99) | Bienvenida + instrucciones de activación en 3 pasos |
+| `DentBot_Premium_Bienvenida.pdf` | Setup Completo ($33) | Bienvenida premium + instrucciones para agendar set-up personalizado |
+| `DentBot Copilot — Guía de Acceso.pdf` | Copilot (ambos planes) | Acceso al cuaderno NotebookLM + política de uso |
+
+### Recursos de contenido (YouTube)
+Videos de referencia usados para construir el conocimiento del proyecto:
+- https://www.youtube.com/watch?v=Dtb1cCCKH80
+- https://www.youtube.com/watch?v=IM7FJF6AF_w
+- https://www.youtube.com/watch?v=Q5Gg7zgWCIo
+- https://www.youtube.com/watch?v=G_n8p9DjNYo
+- https://www.youtube.com/watch?v=efT-jUY6rhg
+- https://www.youtube.com/watch?v=dcLghieKNtA
 
 ---
 
@@ -189,7 +278,7 @@ git push -u origin main
 
 ---
 
-## Estado del arte (al 17 de abril de 2026)
+## Estado del arte (al 19 de abril de 2026)
 
 ### Hecho
 - [x] Landing page completa y publicada en GitHub Pages
@@ -202,6 +291,7 @@ git push -u origin main
 - [x] Cuaderno NotebookLM creado con papers y protocolos clínicos
 - [x] Estrategia completa del Copilot documentada (áreas de conocimiento, casos de uso, política de acceso)
 - [x] Documento de onboarding del Copilot creado (`DentBot Copilot — Guía de Acceso.pdf`)
+- [x] CLAUDE.md expandido con visión del fundador, metas de negocio, tono de marca, proceso de onboarding post-venta y recursos de contenido
 
 ### Pendiente
 - [ ] Configurar DentBot Copilot como order bump en Hotmart para el plan $9.99
