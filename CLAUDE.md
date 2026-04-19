@@ -84,7 +84,7 @@ Cada decisión de diseño, copy y funcionalidad debe estar orientada a **remover
 - **Link de pago:** https://pay.hotmart.com/X105362860D
 
 ### DentBot Copilot (bono + order bump)
-Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente con una biblioteca curada de protocolos odontológicos rigurosos seleccionados por especialistas. **No busca en internet. No improvisa.** Solo responde con base en la bibliografía clínica que conforma su base de conocimiento — respuestas precisas, trazables y alineadas con los estándares de la profesión.
+Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente con una biblioteca curada de 27 documentos clínicos rigurosos — papers de PubMed, PMC y SciELO, guías universitarias, manuales de la OPS y protocolos especializados seleccionados por especialistas. **No busca en internet. No improvisa.** Solo responde con base en esa bibliografía — respuestas precisas, trazables y alineadas con los estándares de la profesión.
 
 **Estrategia comercial:**
 - Incluido gratis como bono en el Setup Completo ($33)
@@ -92,15 +92,54 @@ Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente 
 - Nombre oficial del cuaderno: *"Banco de conocimiento: protocolos clínicos y gestión de pacientes consultados con IA"*
 
 **Áreas de conocimiento cubiertas:**
-- ⚖️ **Marco legal y normativo** — Historia Clínica y Consentimiento Informado según normativas de México, Perú y estándares internacionales; documentación irrebatible ante auditorías y procesos legales
-- 🩺 **Paciente médicamente complejo** — Protocolos de diagnóstico y manejo para casos críticos: alergias a antibióticos (amoxicilina, clindamicina), uso de bifosfonatos, riesgo de sangrado y coagulopatías; decisiones clínicas respaldadas por evidencia
-- 🔬 **Primera visita y retención** — Protocolos de atención inicial y exploración intra/extraoral para maximizar la percepción de valor del paciente y aumentar su tasa de retorno al consultorio
+
+- ⚖️ **Marco legal y normativo** — Historia clínica como documento médico-legal (México UAEH, Perú Colegio Odontológico, Cuba SciELO, España Granada); estándares internacionales de documentación clínica; consentimiento informado; protección ante auditorías y procesos legales
+- 🩺 **Paciente médicamente complejo** — Gestión de pacientes de alto riesgo (Pacific Univ. Dental); clasificación de riesgo ASA (Redalyc); alergias a antibióticos en odontología (guía diagnóstico + UNMSM Sanmarquina); protocolo clínico de bifosfonatos; reacciones adversas a medicamentos en cavidad oral; medicamentos de alto riesgo 2023 (España); Oral Medicine (Univ. de Florida)
+- 🔬 **Historia clínica y anamnesis** — Formularios y modelos de historia dental (Salt Lake CC, SDPT, FuturaLabs); anamnesis en odontología (DtDental Colombia); componentes clínicos del registro dental (DentalCare CE); historia clínica estomatológica (SciELO Cuba); manual de procedimientos clínicos (BVS/OPS); odontología preventiva (Granada)
+- 🏥 **Documentación y registros digitales** — Dental records overview (PMC NIH); clinical documentation era EHR (PMC); essentials of medical history-taking (PubMed); clinical components of the dental record (DentalCare CE)
+- ⚙️ **Gestión y eficiencia del consultorio** — Ten fundamental components of dental practice management (PubMed); efficiency improvement of dentistry clinics (PMC); boost dental office efficiency 2024 (Adit); workflow automation for dental practices (Dentistry Dashboard); dental practice workflow automations (Keragon); AI for dental practice management (Overjet)
+
+**Los 27 documentos de la biblioteca:**
+
+*Protocolos clínicos numerados (base core del Copilot):*
+1. Formulario Historia Dental — Salt Lake Community College
+2. Gestión de Pacientes Médicamente Complejos — Pacific Univ. Dental
+3. Guía Diagnóstico Alergia a Antibióticos en Odontología
+4. Guías Clínicas Oral Medicine — Univ. de Florida
+5. Historia Clínica Odontológica — Colegio Odontológico del Perú
+6. Historia Clínica como Documento Médico Legal — UAEH México
+7. Historia Clínica en Odontología Preventiva — Univ. de Granada
+8. Manual de Procedimientos Clínicos Odontológicos — BVS/OPS
+9. Protocolo Clínico — Bifosfonatos
+10. Reacciones Adversas a Medicamentos en Cavidad Oral
+11. Recomendaciones Uso Seguro de Medicamentos Alto Riesgo 2023 — España
+
+*Documentación, registros e historia clínica (fuentes académicas internacionales):*
+12. Dental Records - An Overview — PMC NIH
+13. Clinical Documentation of Dental Care (era EHR) — PMC
+14. Essentials of Medical History-taking in Dental Patients — PubMed
+15. Clinical Components of the Dental Record — DentalCare CE
+16. La Historia Clínica Estomatológica — SciELO Cuba
+17. Alergias en la Atención Dental — UNMSM Odontología Sanmarquina
+18. Riesgo Médico Pacientes según Clasificación ASA — Redalyc
+19. Qué es la Anamnesis en Odontología — DtDental Colombia
+20. Historia Clínica Odontológica — FuturaLabs
+21. Modelo de Historia Clínica Dental — SDPT
+
+*Gestión, eficiencia y tecnología en la práctica dental:*
+22. Ten Fundamental Components of Dental Practice Management — PubMed
+23. Efficiency Improvement of Dentistry Clinics — PMC
+24. Boost Dental Office Efficiency 2024 — Adit
+25. Workflow Automation for Dental Practices — Dentistry Dashboard
+26. Dental Practice Workflow Automations — Keragon
+27. AI for Dental Practice Management — Overjet
 
 **Casos de uso principales:**
-1. **Consultas en tiempo real** — Antes de atender un paciente complejo: interacciones medicamentosas, contraindicaciones, paso a paso de un protocolo de emergencia
-2. **Auditoría legal de notas clínicas** — Evaluar si las evoluciones cumplen estándares de protección y confidencialidad antes de que sea un problema
+1. **Consultas en tiempo real** — Antes de atender un paciente complejo: interacciones medicamentosas, contraindicaciones, clasificación ASA, paso a paso de un protocolo de emergencia
+2. **Auditoría legal de notas clínicas** — Evaluar si las evoluciones cumplen estándares de protección y confidencialidad (normativas México, Perú, estándares internacionales)
 3. **Capacitación de personal auxiliar** — Resúmenes simplificados de protocolos para entrenar asistentes dentales
 4. **Preparación de consentimientos informados** — Lenguaje exacto para procedimientos específicos (resección, extracción quirúrgica, blanqueamiento)
+5. **Optimización del flujo del consultorio** — Recomendaciones de automatización y eficiencia respaldadas por literatura académica
 
 **Acceso y entrega:**
 - Acceso individual vía enlace único encriptado, vinculado al ID de compra en Hotmart
