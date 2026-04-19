@@ -147,6 +147,39 @@ Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente 
 - Política de acceso vinculante: compartir el enlace resulta en revocación automática, inmediata y permanente del acceso y futuras actualizaciones
 - Documento de onboarding: `DentBot Copilot — Guía de Acceso.pdf` (se envía al comprador)
 
+**Conocimiento clínico clave extraído de los 27 documentos:**
+
+*Umbrales críticos para toma de decisiones clínicas:*
+- **Sangrado/coagulación:** NO operar si INR >3.5, tiempo de sangrado >10 min, o plaquetas <60,000
+- **Hipertensión:** Posponer cirugía si PA >160/100 mmHg
+- **Post-infarto:** Diferir 3 meses para cirugía, 6 meses para anestesia general
+- **DOACs** (Pradaxa, Xarelto, Eliquis): no suspender para procedimientos menores; suspender 24-36h para cirugía extensa
+- **Bifosfonatos IV:** contraindicados para cirugía oral y periodoncia quirúrgica; vía oral son relativamente seguros
+- **Bifosfonatos (cirugía):** suspender 1-3 meses antes y 3 meses después en procedimientos extensos
+- **Índice O'Leary:** referencia <20%; si supera, implementar terapia de higiene antes de tratamiento
+- **Clasificación ASA:** 63.3% de pacientes tienen comorbilidades; hipertensión (56.6%) y diabetes (36.6%) son las más frecuentes; 43.3% son ASA II
+
+*Protocolos farmacológicos clave:*
+- **Bifosfonatos + cirugía:** clorhexidina desde antes hasta 2 meses post-op; amoxicilina + metronidazol (o clindamicina) 2 días antes a 14 días después
+- **Alergias a betalactámicos:** 85-90% son tipo A (predecibles), solo 10-15% son tipo B (inmunológicas reales); la mayoría toleran anestésicos amida — las "alergias reportadas" a anestésicos locales casi nunca son reales
+- **Anafilaxia:** epinefrina es el fármaco de elección; antihistamínicos y corticoides como complemento
+- **Medicamentos de alto riesgo:** anticoagulantes orales, heparinas, opioides, insulinas, bloqueantes neuromusculares, potasio IV, metotrexato oral
+- **Interacciones a vigilar:** eritromicina y ketoconazol potencian warfarina; AINEs y aspirina prolongan sangrado
+
+*Documentación médico-legal:*
+- La historia clínica previene el 90% de situaciones de riesgo (UAEH México)
+- Elementos obligatorios: anamnesis, examen clínico, diagnóstico, plan de tratamiento, consentimiento informado, historia médica (alergias, medicamentos, enfermedades sistémicas)
+- Actualizar historia médica en CADA cita, no solo en la primera
+- Documentar rechazos de tratamiento y citas canceladas
+- Retención: registros vitales = indefinido; registros importantes = 5-7 años
+- Normativas cubiertas: México (UAEH), Perú (Colegio Odontológico), Cuba (SciELO), España (Granada), estándares internacionales
+
+*Eficiencia y automatización del consultorio:*
+- Inasistencias (no-show) representan 11-15% de citas; automatizar recordatorios reduce este índice significativamente
+- Automatizar tareas administrativas reduce carga operativa en ~40%
+- Intervenciones de eficiencia pueden multiplicar ingresos 5x y pacientes atendidos 4x (estudio PMC Irán)
+- IA para análisis radiográfico automatiza detección de caries y medición ósea en tiempo real
+
 ---
 
 ## Proceso de onboarding post-venta
