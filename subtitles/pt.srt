@@ -1,0 +1,154 @@
+1
+00:00:01,000 --> 00:00:09,000
+Doutor ou doutora, vou te fazer uma pergunta incômoda.
+Quantas vezes esta semana você perguntou a um paciente
+
+2
+00:00:09,000 --> 00:00:13,000
+se era alérgico a algum medicamento,
+e quantas vezes ele já tinha te dito isso na consulta anterior?
+
+3
+00:00:13,000 --> 00:00:22,000
+Isso acontece todos os dias e não é culpa sua — é culpa do sistema.
+Você entrou na odontologia para curar, para conectar,
+
+4
+00:00:22,000 --> 00:00:30,000
+para transformar a saúde dos seus pacientes,
+não para ser o formulário humano que faz as mesmas perguntas toda vez.
+
+5
+00:00:30,000 --> 00:00:38,000
+Cada consulta está te custando entre 10 e 15 minutos
+só com perguntas repetitivas.
+
+6
+00:00:38,000 --> 00:00:47,000
+Multiplique isso por 20 consultas por semana.
+São até 5 horas semanais que você não cobra,
+
+7
+00:00:47,000 --> 00:00:55,000
+não descansa, e não se conecta de verdade com seu paciente.
+E isso sem contar o risco:
+
+8
+00:00:55,000 --> 00:01:00,000
+63% dos seus pacientes têm hipertensão, diabetes
+ou estão tomando anticoagulantes.
+
+9
+00:01:00,000 --> 00:01:06,000
+Se essa informação chegar tarde ou incompleta,
+o erro é seu.
+
+10
+00:01:06,000 --> 00:01:11,000
+Agora imagine isso: você chega ao consultório às 8 da manhã,
+abre o Notion e a ficha clínica do seu primeiro paciente já está pronta.
+
+11
+00:01:11,000 --> 00:01:19,000
+Alergias, medicamentos, fatores de risco, alertas —
+tudo processado por inteligência artificial, tudo te esperando.
+
+12
+00:01:19,000 --> 00:01:29,000
+Você entra no consultório, vê o paciente,
+ele sente que você o conhece há toda a vida.
+
+13
+00:01:29,000 --> 00:01:37,000
+Isso não é o futuro. Isso é o DentBot e já está disponível.
+O DentBot é uma automação que conecta um formulário do WhatsApp com IA.
+
+14
+00:01:37,000 --> 00:01:45,000
+Gera dois prontuários clínicos antes de a consulta começar.
+É assim: na véspera, o paciente recebe um link pelo WhatsApp.
+
+15
+00:01:45,000 --> 00:01:58,000
+Abre no celular, sem apps, sem login,
+e em 3 minutos preenche seu histórico médico.
+
+16
+00:01:58,000 --> 00:02:06,000
+Depois de enviar o formulário, o bot começa a trabalhar,
+e é aí que a mágica acontece.
+
+17
+00:02:06,000 --> 00:02:14,000
+A IA processa tudo: extrai alergias, medicamentos, fatores de risco,
+e cria dois documentos no Notion ao mesmo tempo.
+
+18
+00:02:14,000 --> 00:02:22,000
+Um para você com todas as informações para chegar preparado.
+E outro para o seu paciente:
+
+19
+00:02:22,000 --> 00:02:31,000
+um resumo hiperpersonalizado que você entrega ao final da consulta —
+algo que nenhum consultório sem IA pode oferecer.
+
+20
+00:02:31,000 --> 00:02:38,000
+O resultado: um dentista que chega preparado,
+um paciente que se sente ouvido, e uma experiência que o faz voltar.
+
+21
+00:02:38,000 --> 00:02:47,000
+O DentBot tem dois planos. O Self-Setup por $9,99:
+você mesmo configura com as instruções incluídas.
+
+22
+00:02:47,000 --> 00:02:56,000
+O Setup Completo por $33: eu configuro com você ao vivo,
+adaptado ao seu consultório, com o Copilot clínico incluído grátis.
+
+23
+00:02:56,000 --> 00:03:07,000
+Para comparar: softwares dentais tradicionais cobram
+entre $80 e $200 por mês. Com o DentBot, é uma vez. Para sempre.
+
+24
+00:03:07,000 --> 00:03:16,000
+E se isso não bastasse, ao adquirir o plano completo
+você recebe de graça o DentBot Copilot.
+
+25
+00:03:16,000 --> 00:03:22,000
+O DentBot Copilot é um assistente de IA
+treinado com 27 documentos clínicos reais:
+
+26
+00:03:22,000 --> 00:03:29,000
+artigos do PubMed, protocolos de universidades
+da Flórida, Peru, México e Espanha — tudo em um só lugar.
+
+27
+00:03:29,000 --> 00:03:37,000
+Você pode perguntar: "O que faço com um paciente em bisfosfonatos que precisa de extração?"
+ou "Qual é o limite seguro de INR para prosseguir?"
+
+28
+00:03:37,000 --> 00:03:47,000
+Encontrará todas as fontes anexadas e também poderá
+criar recursos a partir do Copilot.
+
+29
+00:03:47,000 --> 00:03:57,000
+O melhor: ele te dá uma resposta imediata, sem precisar googlar,
+sem improvisar — apenas conhecimento clínico verificado.
+
+30
+00:03:57,000 --> 00:04:07,000
+Só tenho oito vagas disponíveis neste preço.
+Quando acabarem, o preço sobe. O link está abaixo.
+
+31
+00:04:07,000 --> 00:04:12,000
+Entre e escolha seu plano.
+Em menos de 24 horas, seu consultório já vai operar diferente.
