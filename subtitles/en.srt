@@ -1,0 +1,154 @@
+1
+00:00:01,000 --> 00:00:09,000
+Doctor, I want to ask you an uncomfortable question.
+How many times this week did you ask a patient
+
+2
+00:00:09,000 --> 00:00:13,000
+if they were allergic to any medication,
+and how many times had they already told you at a previous visit?
+
+3
+00:00:13,000 --> 00:00:22,000
+This happens every day and it's not your fault — it's the system's fault.
+You chose dentistry to heal, to connect,
+
+4
+00:00:22,000 --> 00:00:30,000
+to transform your patients' health,
+not to be the human form that asks the same questions over and over.
+
+5
+00:00:30,000 --> 00:00:38,000
+Every appointment is costing you between 10 and 15 minutes
+just on repetitive questions.
+
+6
+00:00:38,000 --> 00:00:47,000
+Multiply that by 20 appointments a week.
+That's up to 5 hours a week you don't get paid for,
+
+7
+00:00:47,000 --> 00:00:55,000
+don't rest during, and don't truly connect with your patient.
+And that's without counting the risk:
+
+8
+00:00:55,000 --> 00:01:00,000
+63% of your patients have hypertension, diabetes,
+or are taking anticoagulants.
+
+9
+00:01:00,000 --> 00:01:06,000
+If that information arrives late or incomplete,
+the mistake is yours.
+
+10
+00:01:06,000 --> 00:01:11,000
+Now imagine this: you arrive at your office at 8 a.m.,
+you open Notion, and your first patient's clinical file is already ready.
+
+11
+00:01:11,000 --> 00:01:19,000
+Allergies, medications, risk factors, alerts —
+all processed by artificial intelligence, all waiting for you.
+
+12
+00:01:19,000 --> 00:01:29,000
+You walk in, you see them,
+they feel like you've known them their whole life.
+
+13
+00:01:29,000 --> 00:01:37,000
+This isn't the future. This is DentBot and it's already available.
+DentBot is an automation that connects a WhatsApp form with AI.
+
+14
+00:01:37,000 --> 00:01:45,000
+It generates two clinical files before the appointment even starts.
+Here's how: the day before, the patient receives a link via WhatsApp.
+
+15
+00:01:45,000 --> 00:01:58,000
+They open it on their phone, no apps, no login,
+and in 3 minutes they fill out their medical history.
+
+16
+00:01:58,000 --> 00:02:06,000
+Once the form is submitted, the bot starts working,
+and that's where the magic happens.
+
+17
+00:02:06,000 --> 00:02:14,000
+The AI processes everything: extracts allergies, medications, risk factors,
+and creates two documents in Notion at the same time.
+
+18
+00:02:14,000 --> 00:02:22,000
+One for you, with all the information you need to arrive prepared.
+And one for your patient:
+
+19
+00:02:22,000 --> 00:02:31,000
+a hyper-personalized summary you hand them at the end of the visit —
+something no non-AI practice can give them.
+
+20
+00:02:31,000 --> 00:02:38,000
+The result: a dentist who arrives prepared,
+a patient who feels heard, and an experience that brings them back.
+
+21
+00:02:38,000 --> 00:02:47,000
+DentBot has two plans. The Self-Setup at $9.99:
+you configure it yourself with the included instructions.
+
+22
+00:02:47,000 --> 00:02:56,000
+The Complete Setup at $33: I configure it with you live,
+tailored to your practice, with the clinical Copilot included free.
+
+23
+00:02:56,000 --> 00:03:07,000
+For comparison: traditional dental software charges
+between $80 and $200 per month. With DentBot, it's one time. Forever.
+
+24
+00:03:07,000 --> 00:03:16,000
+And if that weren't enough, when you get the complete plan,
+you receive the DentBot Copilot absolutely free.
+
+25
+00:03:16,000 --> 00:03:22,000
+The DentBot Copilot is an AI assistant
+trained on 27 real clinical dental documents:
+
+26
+00:03:22,000 --> 00:03:29,000
+PubMed papers, protocols from universities
+in Florida, Peru, Mexico, and Spain — all in one place.
+
+27
+00:03:29,000 --> 00:03:37,000
+You can ask: "What do I do with a patient on bisphosphonates who needs an extraction?"
+or "What's the safe INR threshold to proceed?"
+
+28
+00:03:37,000 --> 00:03:47,000
+All sources are attached, and you can also
+create resources directly from the Copilot.
+
+29
+00:03:47,000 --> 00:03:57,000
+The best part: it gives you an immediate answer, no Googling,
+no improvising — only verified clinical knowledge.
+
+30
+00:03:57,000 --> 00:04:07,000
+I only have eight spots available at this price.
+When they're gone, the price goes up. The link is below.
+
+31
+00:04:07,000 --> 00:04:12,000
+Go in and choose your plan.
+In less than 24 hours, your practice already operates differently.

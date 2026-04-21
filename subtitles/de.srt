@@ -1,0 +1,154 @@
+1
+00:00:01,000 --> 00:00:09,000
+Herr Doktor, Frau Doktorin, ich möchte Ihnen eine unbequeme Frage stellen.
+Wie oft haben Sie diese Woche einen Patienten gefragt,
+
+2
+00:00:09,000 --> 00:00:13,000
+ob er allergisch auf ein Medikament ist,
+und wie oft hatte er es Ihnen beim letzten Termin bereits gesagt?
+
+3
+00:00:13,000 --> 00:00:22,000
+Das passiert jeden Tag, und es ist nicht Ihre Schuld — es ist die Schuld des Systems.
+Sie haben Zahnmedizin gewählt, um zu heilen, um zu verbinden,
+
+4
+00:00:22,000 --> 00:00:30,000
+um die Gesundheit Ihrer Patienten zu transformieren —
+nicht um das menschliche Formular zu sein, das immer dieselben Fragen stellt.
+
+5
+00:00:30,000 --> 00:00:38,000
+Jede Konsultation kostet Sie 10 bis 15 Minuten
+allein für Wiederholungsfragen.
+
+6
+00:00:38,000 --> 00:00:47,000
+Multiplizieren Sie das mit 20 Terminen pro Woche.
+Das sind bis zu 5 Stunden pro Woche ohne Bezahlung,
+
+7
+00:00:47,000 --> 00:00:55,000
+ohne Erholung, ohne echte Verbindung zum Patienten.
+Und das ohne das Risiko zu berücksichtigen:
+
+8
+00:00:55,000 --> 00:01:00,000
+63 % Ihrer Patienten haben Bluthochdruck, Diabetes
+oder nehmen Antikoagulanzien.
+
+9
+00:01:00,000 --> 00:01:06,000
+Wenn diese Information zu spät oder unvollständig ankommt,
+liegt der Fehler bei Ihnen.
+
+10
+00:01:06,000 --> 00:01:11,000
+Stellen Sie sich jetzt vor: Sie kommen um 8 Uhr in die Praxis,
+öffnen Notion, und die Patientenakte Ihres ersten Patienten ist bereits fertig.
+
+11
+00:01:11,000 --> 00:01:19,000
+Allergien, Medikamente, Risikofaktoren, Warnhinweise —
+alles von künstlicher Intelligenz verarbeitet, alles bereit für Sie.
+
+12
+00:01:19,000 --> 00:01:29,000
+Sie betreten das Behandlungszimmer, sehen den Patienten —
+er fühlt, als würden Sie ihn schon sein ganzes Leben kennen.
+
+13
+00:01:29,000 --> 00:01:37,000
+Das ist nicht die Zukunft. Das ist DentBot, und es ist bereits verfügbar.
+DentBot ist eine Automatisierung, die ein WhatsApp-Formular mit KI verbindet.
+
+14
+00:01:37,000 --> 00:01:45,000
+Es erstellt zwei klinische Akten, bevor die Konsultation beginnt.
+So funktioniert es: Am Vortag erhält der Patient einen Link per WhatsApp.
+
+15
+00:01:45,000 --> 00:01:58,000
+Er öffnet ihn auf seinem Handy, keine App, kein Login,
+und füllt in 3 Minuten seine Krankengeschichte aus.
+
+16
+00:01:58,000 --> 00:02:06,000
+Sobald das Formular gesendet ist, beginnt der Bot zu arbeiten,
+und genau dann passiert die Magie.
+
+17
+00:02:06,000 --> 00:02:14,000
+Die KI verarbeitet alles: extrahiert Allergien, Medikamente, Risikofaktoren
+und erstellt gleichzeitig zwei Dokumente in Notion.
+
+18
+00:02:14,000 --> 00:02:22,000
+Eines für Sie mit allen Informationen, die Sie brauchen, um vorbereitet zu kommen.
+Und eines für Ihren Patienten:
+
+19
+00:02:22,000 --> 00:02:31,000
+eine hyperpersonalisierte Zusammenfassung, die Sie am Ende der Konsultation übergeben —
+etwas, das keine Praxis ohne KI bieten kann.
+
+20
+00:02:31,000 --> 00:02:38,000
+Das Ergebnis: ein Zahnarzt, der vorbereitet kommt,
+ein Patient, der sich gehört fühlt, und eine Erfahrung, die ihn zurückbringt.
+
+21
+00:02:38,000 --> 00:02:47,000
+DentBot hat zwei Pläne. Das Self-Setup für 9,99 $:
+Sie richten es selbst mit den beigefügten Anweisungen ein.
+
+22
+00:02:47,000 --> 00:02:56,000
+Das Complete Setup für 33 $: Ich richte es live mit Ihnen ein,
+angepasst an Ihre Praxis, mit dem klinischen Copilot kostenlos inklusive.
+
+23
+00:02:56,000 --> 00:03:07,000
+Zum Vergleich: Herkömmliche Zahnarzt-Software kostet
+zwischen 80 und 200 $ pro Monat. Mit DentBot einmalig. Für immer.
+
+24
+00:03:07,000 --> 00:03:16,000
+Und falls das nicht genug wäre: Beim Kauf des kompletten Plans
+erhalten Sie den DentBot Copilot kostenlos dazu.
+
+25
+00:03:16,000 --> 00:03:22,000
+Der DentBot Copilot ist ein KI-Assistent,
+der mit 27 echten klinisch-zahnärztlichen Dokumenten trainiert wurde:
+
+26
+00:03:22,000 --> 00:03:29,000
+PubMed-Artikel, Protokolle von Universitäten
+aus Florida, Peru, Mexiko und Spanien — alles an einem Ort.
+
+27
+00:03:29,000 --> 00:03:37,000
+Sie können fragen: „Was mache ich mit einem Patienten unter Bisphosphonaten, der eine Extraktion benötigt?"
+oder „Was ist der sichere INR-Schwellenwert für einen Eingriff?"
+
+28
+00:03:37,000 --> 00:03:47,000
+Alle Quellen sind angehängt und Sie können außerdem
+Ressourcen aus dem Copilot erstellen.
+
+29
+00:03:47,000 --> 00:03:57,000
+Das Beste: Er gibt sofort eine Antwort, ohne Google-Suche,
+ohne Improvisation — nur verifiziertes klinisches Wissen.
+
+30
+00:03:57,000 --> 00:04:07,000
+Ich habe nur acht Plätze zu diesem Preis.
+Wenn sie vergeben sind, steigt der Preis. Der Link ist unten.
+
+31
+00:04:07,000 --> 00:04:12,000
+Gehen Sie rein und wählen Sie Ihren Plan.
+In weniger als 24 Stunden arbeitet Ihre Praxis bereits anders.

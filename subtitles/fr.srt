@@ -1,0 +1,154 @@
+1
+00:00:01,000 --> 00:00:09,000
+Docteur ou docteure, je vais vous poser une question inconfortable.
+Combien de fois cette semaine avez-vous demandé à un patient
+
+2
+00:00:09,000 --> 00:00:13,000
+s'il était allergique à un médicament,
+et combien de fois vous l'avait-il déjà dit lors d'une consultation précédente ?
+
+3
+00:00:13,000 --> 00:00:22,000
+Cela arrive tous les jours et ce n'est pas votre faute — c'est la faute du système.
+Vous avez choisi la dentisterie pour soigner, pour connecter,
+
+4
+00:00:22,000 --> 00:00:30,000
+pour transformer la santé de vos patients,
+pas pour être le formulaire humain qui pose les mêmes questions encore et encore.
+
+5
+00:00:30,000 --> 00:00:38,000
+Chaque consultation vous coûte entre 10 et 15 minutes
+rien qu'en questions répétitives.
+
+6
+00:00:38,000 --> 00:00:47,000
+Multipliez ça par 20 consultations par semaine.
+Ce sont jusqu'à 5 heures par semaine non rémunérées,
+
+7
+00:00:47,000 --> 00:00:55,000
+sans repos, sans vraie connexion avec votre patient.
+Et sans compter le risque :
+
+8
+00:00:55,000 --> 00:01:00,000
+63 % de vos patients ont de l'hypertension, du diabète
+ou prennent des anticoagulants.
+
+9
+00:01:00,000 --> 00:01:06,000
+Si cette information arrive tard ou incomplète,
+l'erreur est la vôtre.
+
+10
+00:01:06,000 --> 00:01:11,000
+Maintenant imaginez ceci : vous arrivez au cabinet à 8 h du matin,
+vous ouvrez Notion et le dossier de votre premier patient est déjà prêt.
+
+11
+00:01:11,000 --> 00:01:19,000
+Allergies, médicaments, facteurs de risque, alertes —
+tout traité par intelligence artificielle, tout prêt pour vous.
+
+12
+00:01:19,000 --> 00:01:29,000
+Vous entrez, vous le voyez,
+il a l'impression que vous le connaissez depuis toujours.
+
+13
+00:01:29,000 --> 00:01:37,000
+Ce n'est pas le futur. C'est DentBot et il est déjà disponible.
+DentBot est une automatisation qui connecte un formulaire WhatsApp à l'IA.
+
+14
+00:01:37,000 --> 00:01:45,000
+Il génère deux fiches cliniques avant même le début de la consultation.
+Voici comment : la veille, le patient reçoit un lien via WhatsApp.
+
+15
+00:01:45,000 --> 00:01:58,000
+Il l'ouvre sur son téléphone, sans appli, sans connexion,
+et en 3 minutes remplit ses antécédents médicaux.
+
+16
+00:01:58,000 --> 00:02:06,000
+Une fois le formulaire envoyé, le bot commence à travailler,
+et c'est là que la magie opère.
+
+17
+00:02:06,000 --> 00:02:14,000
+L'IA traite tout : extrait allergies, médicaments, facteurs de risque,
+et crée deux documents dans Notion simultanément.
+
+18
+00:02:14,000 --> 00:02:22,000
+Un pour vous avec toutes les informations pour arriver préparé.
+Et un pour votre patient :
+
+19
+00:02:22,000 --> 00:02:31,000
+un résumé hyperpersonnalisé que vous lui remettez en fin de consultation —
+quelque chose qu'aucun cabinet sans IA ne peut offrir.
+
+20
+00:02:31,000 --> 00:02:38,000
+Le résultat : un dentiste qui arrive préparé,
+un patient qui se sent écouté, et une expérience qui le fait revenir.
+
+21
+00:02:38,000 --> 00:02:47,000
+DentBot propose deux plans. Le Self-Setup à 9,99 $ :
+vous le configurez vous-même avec les instructions incluses.
+
+22
+00:02:47,000 --> 00:02:56,000
+Le Setup Complet à 33 $ : je le configure avec vous en direct,
+adapté à votre cabinet, avec le Copilot clinique inclus gratuitement.
+
+23
+00:02:56,000 --> 00:03:07,000
+Pour comparer : les logiciels dentaires traditionnels coûtent
+entre 80 et 200 $ par mois. Avec DentBot, c'est une fois. Pour toujours.
+
+24
+00:03:07,000 --> 00:03:16,000
+Et si cela ne suffisait pas, en optant pour le plan complet
+vous recevez gratuitement le DentBot Copilot.
+
+25
+00:03:16,000 --> 00:03:22,000
+Le DentBot Copilot est un assistant IA
+entraîné sur 27 vrais documents cliniques dentaires :
+
+26
+00:03:22,000 --> 00:03:29,000
+des articles PubMed, des protocoles d'universités
+de Floride, du Pérou, du Mexique et d'Espagne — tout au même endroit.
+
+27
+00:03:29,000 --> 00:03:37,000
+Vous pouvez lui demander : « Que faire avec un patient sous bisphosphonates qui a besoin d'une extraction ? »
+ou « Quel est le seuil d'INR sûr pour procéder ? »
+
+28
+00:03:37,000 --> 00:03:47,000
+Toutes les sources sont jointes et vous pouvez également
+créer des ressources à partir du Copilot.
+
+29
+00:03:47,000 --> 00:03:57,000
+Le mieux : il répond immédiatement, sans chercher sur Google,
+sans improviser — uniquement des connaissances cliniques vérifiées.
+
+30
+00:03:57,000 --> 00:04:07,000
+Je n'ai que huit places disponibles à ce prix.
+Quand elles seront prises, le prix monte. Le lien est ci-dessous.
+
+31
+00:04:07,000 --> 00:04:12,000
+Entrez et choisissez votre plan.
+En moins de 24 heures, votre cabinet fonctionne déjà différemment.
