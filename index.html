@@ -974,8 +974,10 @@
       <!-- Video container (16:9 aspect ratio) -->
       <div class="relative aspect-video bg-black rounded-xl overflow-hidden shadow-soft-lg">
         <iframe
+          id="videoIframe"
           class="absolute inset-0 w-full h-full"
-          src="https://www.youtube.com/embed/s_D0gcyPH4A?autoplay=1&cc_load_policy=1&rel=0"
+          src=""
+          data-src="https://www.youtube.com/embed/s_D0gcyPH4A?autoplay=1&cc_load_policy=1&rel=0"
           title="DentBot — Automatiza la anamnesis de tu consultorio con IA"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1064,6 +1066,8 @@
     // Video modal functions
     function openVideoModal() {
       const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('videoIframe');
+      iframe.src = iframe.dataset.src;
       modal.classList.remove('hidden');
       modal.classList.add('flex');
       document.body.style.overflow = 'hidden';
@@ -1071,6 +1075,8 @@
 
     function closeVideoModal() {
       const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('videoIframe');
+      iframe.src = '';
       modal.classList.remove('flex');
       modal.classList.add('hidden');
       document.body.style.overflow = '';
