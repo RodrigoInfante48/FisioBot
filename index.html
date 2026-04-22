@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DentBot automatiza la anamnesis de tus pacientes antes de que lleguen a tu consultorio. Recupera 10-15 minutos por consulta.">
+  <meta name="description" content="FisioBot automatiza la historia clínica de tus pacientes antes de que lleguen a tu consulta. Recupera 10-15 minutos por sesión.">
   <meta name="theme-color" content="#1a1a2e">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🦷</text></svg>">
+  <title>FisioBot — Historia clínica automatizada para fisioterapeutas</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🏃</text></svg>">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="DentBot — Anamnesis automatizada para odontólogos">
-  <meta property="og:description" content="Recupera 10-15 minutos por consulta. Sin papel, sin repetición, sin pérdida de información.">
+  <meta property="og:title" content="FisioBot — Historia clínica automatizada para fisioterapeutas">
+  <meta property="og:description" content="Recupera 10-15 minutos por sesión. Sin papel, sin repetición, sin pérdida de información."  >
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://rodrigoinfante48.github.io/DentBot/og-image.png">
+  <meta property="og:image" content="https://rodrigoinfante48.github.io/FisioBot/og-image.png">
   <meta property="og:image:width" content="900">
   <meta property="og:image:height" content="1200">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://rodrigoinfante48.github.io/DentBot/og-image.png">
+  <meta name="twitter:image" content="https://rodrigoinfante48.github.io/FisioBot/og-image.png">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M08G3EFVMM"></script>
@@ -61,7 +62,7 @@
             sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
           },
           colors: {
-            dentbot: {
+            fisiobot: {
               teal: '#00E6C7',
               'teal-dark': '#00C4B0',
               gold: '#FFB800',
@@ -228,18 +229,18 @@
     }
   </style>
 </head>
-<body class="bg-dentbot-navy text-white min-h-screen">
+<body class="bg-fisiobot-navy text-white min-h-screen">
 
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-dentbot-navy/90 backdrop-blur-glass border-b border-dentbot-surface-light">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-fisiobot-navy/90 backdrop-blur-glass border-b border-fisiobot-surface-light">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
         <div class="flex items-center gap-2">
-          <svg class="w-8 h-8 text-dentbot-teal" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C9.5 2 7.5 4 7.5 6.5C7.5 7.5 7.8 8.4 8.3 9.2C6.5 10.1 5 12 5 14.5C5 17.5 7.5 20 10.5 20H13.5C16.5 20 19 17.5 19 14.5C19 12 17.5 10.1 15.7 9.2C16.2 8.4 16.5 7.5 16.5 6.5C16.5 4 14.5 2 12 2ZM12 4C13.5 4 14.5 5 14.5 6.5C14.5 8 13.5 9 12 9C10.5 9 9.5 8 9.5 6.5C9.5 5 10.5 4 12 4ZM13.5 18H10.5C8.5 18 7 16.5 7 14.5C7 12.5 8.5 11 10.5 11H13.5C15.5 11 17 12.5 17 14.5C17 16.5 15.5 18 13.5 18Z"/>
+          <svg class="w-8 h-8 text-fisiobot-teal" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/>
           </svg>
-          <span class="font-bold text-lg text-white">DentBot</span>
+          <span class="font-bold text-lg text-white">FisioBot</span>
         </div>
 
         <!-- Header CTA -->
@@ -247,7 +248,7 @@
           href="https://pay.hotmart.com/X105362860D?checkoutMode=10&bid=1776687108666"
           target="_blank"
           rel="noopener noreferrer"
-          class="hidden sm:inline-flex items-center gap-2 px-5 py-2 bg-dentbot-teal text-dentbot-navy font-bold rounded-lg hover:bg-dentbot-teal-dark transition-all duration-200 shadow-glow-teal"
+          class="hidden sm:inline-flex items-center gap-2 px-5 py-2 bg-fisiobot-teal text-fisiobot-navy font-bold rounded-lg hover:bg-fisiobot-teal-dark transition-all duration-200 shadow-glow-teal"
         >
           Empezar ahora →
         </a>
@@ -261,32 +262,32 @@
     <!-- HERO / HOOK Section -->
     <section class="relative pt-32 pb-20 sm:pt-40 sm:pb-28 overflow-hidden">
       <!-- Background gradient -->
-      <div class="absolute inset-0 bg-gradient-to-br from-dentbot-navy via-dentbot-surface to-dentbot-teal/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-fisiobot-navy via-fisiobot-surface to-fisiobot-teal/10"></div>
 
       <!-- Decorative glow -->
-      <div class="absolute top-1/4 -right-1/4 w-96 h-96 bg-dentbot-teal/20 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-dentbot-gold/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/4 -right-1/4 w-96 h-96 bg-fisiobot-teal/20 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 -left-1/4 w-96 h-96 bg-fisiobot-gold/10 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <!-- Eyebrow -->
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-dentbot-surface-light/50 border border-dentbot-teal/30 mb-6">
-            <svg class="w-4 h-4 text-dentbot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-fisiobot-surface-light/50 border border-fisiobot-teal/30 mb-6">
+            <svg class="w-4 h-4 text-fisiobot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
             </svg>
-            <span class="text-sm font-medium text-dentbot-teal">Para odontólogos en Bogotá</span>
+            <span class="text-sm font-medium text-fisiobot-teal">Para odontólogos en Bogotá</span>
           </div>
 
           <!-- H1 -->
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
             ¿Cuánto tiempo pierdes preguntando
-            <span class="block text-dentbot-teal">lo que el paciente ya sabe?</span>
+            <span class="block text-fisiobot-teal">lo que el paciente ya sabe?</span>
           </h1>
 
           <!-- Subtitle -->
           <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-            DentBot hace la anamnesis antes de que el paciente llegue al sillón.
+            FisioBot hace la anamnesis antes de que el paciente llegue al sillón.
             <span class="block mt-2 text-gray-400">Recupera 10-15 minutos por consulta. Sin papel, sin repetición, sin pérdida de información.</span>
           </p>
 
@@ -294,7 +295,7 @@
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
               href="#demo"
-              class="inline-flex items-center gap-2 px-8 py-4 bg-dentbot-teal text-dentbot-navy font-bold rounded-lg hover:bg-dentbot-teal-dark transition-all duration-200 shadow-glow-teal hover:shadow-lg transform hover:-translate-y-0.5"
+              class="inline-flex items-center gap-2 px-8 py-4 bg-fisiobot-teal text-fisiobot-navy font-bold rounded-lg hover:bg-fisiobot-teal-dark transition-all duration-200 shadow-glow-teal hover:shadow-lg transform hover:-translate-y-0.5"
             >
               <span>Quiero ver cómo funciona</span>
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -311,14 +312,14 @@
               onclick="openVideoModal()"
               role="button"
               tabindex="0"
-              aria-label="Ver demo de 3 minutos de DentBot"
+              aria-label="Ver demo de 3 minutos de FisioBot"
               onkeydown="if(event.key === 'Enter' || event.key === ' ') { openVideoModal(); }"
             >
               <!-- Thumbnail container -->
               <div class="gradient-border rounded-2xl shadow-soft-lg">
-              <div class="relative aspect-video overflow-hidden bg-dentbot-surface" style="border-radius:14px">
+              <div class="relative aspect-video overflow-hidden bg-fisiobot-surface" style="border-radius:14px">
                 <!-- Background pattern -->
-                <div class="absolute inset-0 bg-gradient-to-br from-dentbot-navy to-dentbot-surface"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-fisiobot-navy to-fisiobot-surface"></div>
 
                 <!-- Grid pattern overlay -->
                 <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#00E6C7 1px, transparent 1px), linear-gradient(90deg, #00E6C7 1px, transparent 1px); background-size: 40px 40px;"></div>
@@ -326,8 +327,8 @@
                 <!-- Center content -->
                 <div class="absolute inset-0 flex flex-col items-center justify-center">
                   <!-- Play button -->
-                  <div class="play-button relative flex items-center justify-center w-20 h-20 rounded-full bg-dentbot-teal group-hover:scale-110 transition-transform duration-200">
-                    <svg class="w-8 h-8 text-dentbot-navy ml-1" fill="currentColor" viewBox="0 0 24 24">
+                  <div class="play-button relative flex items-center justify-center w-20 h-20 rounded-full bg-fisiobot-teal group-hover:scale-110 transition-transform duration-200">
+                    <svg class="w-8 h-8 text-fisiobot-navy ml-1" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </div>
@@ -352,25 +353,25 @@
           <!-- Social proof -->
           <div class="mt-12 flex flex-wrap items-center justify-center gap-6 text-gray-400 text-sm">
             <div class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-dentbot-teal" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-fisiobot-teal" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
               </svg>
               <span>Usado en Usaquén</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-dentbot-teal" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-fisiobot-teal" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
               </svg>
               <span>Chapinero</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-dentbot-teal" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-fisiobot-teal" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
               </svg>
               <span>Cedritos</span>
             </div>
             <div class="flex items-center gap-2">
-              <svg class="w-5 h-5 text-dentbot-teal" fill="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 text-fisiobot-teal" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
               </svg>
               <span>Chía</span>
@@ -381,30 +382,30 @@
     </section>
 
     <!-- DOLOR Section -->
-    <section class="py-20 sm:py-28 bg-dentbot-surface relative overflow-hidden">
+    <section class="py-20 sm:py-28 bg-fisiobot-surface relative overflow-hidden">
       <!-- Background decoration -->
-      <div class="absolute top-0 left-1/4 w-64 h-64 bg-dentbot-gold/5 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-dentbot-teal/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-0 left-1/4 w-64 h-64 bg-fisiobot-gold/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-fisiobot-teal/5 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section header -->
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Tu consulta vale oro.<br>
-            <span class="text-dentbot-teal">No la desperdicies en preguntas de relleno.</span>
+            <span class="text-fisiobot-teal">No la desperdicies en preguntas de relleno.</span>
           </h2>
           <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-            Estos son los 3 problemas que DentBot elimina de tu práctica diaria
+            Estos son los 3 problemas que FisioBot elimina de tu práctica diaria
           </p>
         </div>
 
         <!-- Pain points grid -->
         <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
           <!-- Card 1: Anamnesis repetida -->
-          <div class="group relative spotlight-card bg-dentbot-navy rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-teal/50 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1">
+          <div class="group relative spotlight-card bg-fisiobot-navy rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-teal/50 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1">
             <!-- Icon container -->
-            <div class="w-14 h-14 rounded-xl bg-dentbot-gold/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-dentbot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 rounded-xl bg-fisiobot-gold/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-7 h-7 text-fisiobot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
@@ -419,14 +420,14 @@
             </p>
 
             <!-- Bottom accent -->
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-dentbot-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-fisiobot-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
           </div>
 
           <!-- Card 2: Tratamiento pendiente -->
-          <div class="group relative spotlight-card bg-dentbot-navy rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-teal/50 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1">
+          <div class="group relative spotlight-card bg-fisiobot-navy rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-teal/50 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1">
             <!-- Icon container -->
-            <div class="w-14 h-14 rounded-xl bg-dentbot-teal/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-dentbot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 rounded-xl bg-fisiobot-teal/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-7 h-7 text-fisiobot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
               </svg>
             </div>
@@ -441,14 +442,14 @@
             </p>
 
             <!-- Bottom accent -->
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-dentbot-teal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-fisiobot-teal to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
           </div>
 
           <!-- Card 3: Paciente que no volvió -->
-          <div class="group relative spotlight-card bg-dentbot-navy rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-teal/50 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1">
+          <div class="group relative spotlight-card bg-fisiobot-navy rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-teal/50 transition-all duration-300 hover:shadow-soft-lg hover:-translate-y-1">
             <!-- Icon container -->
-            <div class="w-14 h-14 rounded-xl bg-dentbot-gold/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-7 h-7 text-dentbot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="w-14 h-14 rounded-xl bg-fisiobot-gold/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <svg class="w-7 h-7 text-fisiobot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
               </svg>
             </div>
@@ -463,7 +464,7 @@
             </p>
 
             <!-- Bottom accent -->
-            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-dentbot-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-fisiobot-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
           </div>
         </div>
 
@@ -471,7 +472,7 @@
         <div class="text-center mt-12">
           <a
             href="#solucion"
-            class="inline-flex items-center gap-2 text-dentbot-teal font-semibold hover:text-dentbot-teal-dark transition-colors duration-200"
+            class="inline-flex items-center gap-2 text-fisiobot-teal font-semibold hover:text-fisiobot-teal-dark transition-colors duration-200"
           >
             <span>Hay una mejor forma</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -483,17 +484,17 @@
     </section>
 
     <!-- SOLUCIÓN Section -->
-    <section id="solucion" class="py-20 sm:py-28 bg-dentbot-navy relative overflow-hidden">
+    <section id="solucion" class="py-20 sm:py-28 bg-fisiobot-navy relative overflow-hidden">
       <!-- Background decoration -->
-      <div class="absolute top-1/2 -left-1/4 w-96 h-96 bg-dentbot-teal/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 right-0 w-64 h-64 bg-dentbot-gold/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 -left-1/4 w-96 h-96 bg-fisiobot-teal/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-0 w-64 h-64 bg-fisiobot-gold/5 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section header -->
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            DentBot hace la anamnesis<br>
-            <span class="text-dentbot-teal">antes de la consulta</span>
+            FisioBot hace la anamnesis<br>
+            <span class="text-fisiobot-teal">antes de la consulta</span>
           </h2>
           <p class="text-lg text-gray-400 max-w-2xl mx-auto">
             3 pasos. Cero fricción. Todo automatizado.
@@ -503,21 +504,21 @@
         <!-- Flow diagram -->
         <div class="relative">
           <!-- Connection line (desktop) -->
-          <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-dentbot-gold via-dentbot-teal to-dentbot-gold transform -translate-y-1/2"></div>
+          <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-fisiobot-gold via-fisiobot-teal to-fisiobot-gold transform -translate-y-1/2"></div>
 
           <!-- Steps grid -->
           <div class="grid md:grid-cols-3 gap-8 relative">
             <!-- Step 1: Tally -->
             <div class="relative">
-              <div class="spotlight-card bg-dentbot-surface rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-gold/50 transition-all duration-300 hover:shadow-soft-lg h-full">
+              <div class="spotlight-card bg-fisiobot-surface rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-gold/50 transition-all duration-300 hover:shadow-soft-lg h-full">
                 <!-- Step number -->
-                <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-dentbot-gold flex items-center justify-center text-dentbot-navy font-bold text-sm">
+                <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-fisiobot-gold flex items-center justify-center text-fisiobot-navy font-bold text-sm">
                   1
                 </div>
 
                 <!-- Icon -->
-                <div class="w-16 h-16 rounded-xl bg-dentbot-gold/10 flex items-center justify-center mb-6">
-                  <svg class="w-8 h-8 text-dentbot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-16 h-16 rounded-xl bg-fisiobot-gold/10 flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-fisiobot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                   </svg>
                 </div>
@@ -530,7 +531,7 @@
                   Recibe el link por WhatsApp después de agendar.
                   Lo completa en 3 minutos. Sin apps, sin login.
                 </p>
-                <span class="inline-block text-sm text-dentbot-gold font-medium">
+                <span class="inline-block text-sm text-fisiobot-gold font-medium">
                   ⏱️ 3 minutos
                 </span>
               </div>
@@ -538,15 +539,15 @@
 
             <!-- Step 2: Gemini -->
             <div class="relative">
-              <div class="spotlight-card bg-dentbot-surface rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-teal/50 transition-all duration-300 hover:shadow-soft-lg h-full">
+              <div class="spotlight-card bg-fisiobot-surface rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-teal/50 transition-all duration-300 hover:shadow-soft-lg h-full">
                 <!-- Step number -->
-                <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-dentbot-teal flex items-center justify-center text-dentbot-navy font-bold text-sm">
+                <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-fisiobot-teal flex items-center justify-center text-fisiobot-navy font-bold text-sm">
                   2
                 </div>
 
                 <!-- Icon -->
-                <div class="w-16 h-16 rounded-xl bg-dentbot-teal/10 flex items-center justify-center mb-6">
-                  <svg class="w-8 h-8 text-dentbot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-16 h-16 rounded-xl bg-fisiobot-teal/10 flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-fisiobot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                   </svg>
                 </div>
@@ -558,7 +559,7 @@
                 <p class="text-gray-400 leading-relaxed mb-4">
                   Make.com recibe el formulario y llama a Gemini. La IA extrae alergias, medicamentos y factores de riesgo — y genera el contenido para las dos fichas en una sola pasada.
                 </p>
-                <span class="inline-block text-sm text-dentbot-teal font-medium">
+                <span class="inline-block text-sm text-fisiobot-teal font-medium">
                   ✨ Una llamada · Dos fichas
                 </span>
               </div>
@@ -566,15 +567,15 @@
 
             <!-- Step 3: Notion -->
             <div class="relative">
-              <div class="spotlight-card bg-dentbot-surface rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-gold/50 transition-all duration-300 hover:shadow-soft-lg h-full">
+              <div class="spotlight-card bg-fisiobot-surface rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-gold/50 transition-all duration-300 hover:shadow-soft-lg h-full">
                 <!-- Step number -->
-                <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-dentbot-gold flex items-center justify-center text-dentbot-navy font-bold text-sm">
+                <div class="absolute -top-4 left-8 w-8 h-8 rounded-full bg-fisiobot-gold flex items-center justify-center text-fisiobot-navy font-bold text-sm">
                   3
                 </div>
 
                 <!-- Icon -->
-                <div class="w-16 h-16 rounded-xl bg-dentbot-gold/10 flex items-center justify-center mb-6">
-                  <svg class="w-8 h-8 text-dentbot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-16 h-16 rounded-xl bg-fisiobot-gold/10 flex items-center justify-center mb-6">
+                  <svg class="w-8 h-8 text-fisiobot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                   </svg>
                 </div>
@@ -586,7 +587,7 @@
                 <p class="text-gray-400 leading-relaxed mb-4">
                   El Router de Make las distribuye en paralelo. La ficha PRE te espera antes de la consulta. La ficha POST, lista para compartir con el paciente al terminar.
                 </p>
-                <span class="inline-block text-sm text-dentbot-gold font-medium">
+                <span class="inline-block text-sm text-fisiobot-gold font-medium">
                   ✓ Listo para atender
                 </span>
               </div>
@@ -598,7 +599,7 @@
         <div class="mt-16 max-w-5xl mx-auto">
           <!-- Header -->
           <div class="text-center mb-10">
-            <p class="text-sm font-semibold text-dentbot-teal uppercase tracking-wider mb-3">Lo que llega a Notion</p>
+            <p class="text-sm font-semibold text-fisiobot-teal uppercase tracking-wider mb-3">Lo que llega a Notion</p>
             <h3 class="text-2xl sm:text-3xl font-bold text-white">
               Dos fichas generadas al mismo tiempo.
               <span class="block text-xl font-normal text-gray-400 mt-1">Una para ti. Una para el paciente.</span>
@@ -608,84 +609,84 @@
           <!-- PRE / POST cards -->
           <div class="grid md:grid-cols-2 gap-6 mb-8">
             <!-- Ficha PRE -->
-            <div class="spotlight-card bg-dentbot-surface rounded-2xl p-7 border border-dentbot-teal/30">
+            <div class="spotlight-card bg-fisiobot-surface rounded-2xl p-7 border border-fisiobot-teal/30">
               <div class="flex items-center gap-3 mb-5">
-                <div class="w-10 h-10 rounded-lg bg-dentbot-teal/15 flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-dentbot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-10 h-10 rounded-lg bg-fisiobot-teal/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-fisiobot-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
                   </svg>
                 </div>
                 <div>
-                  <p class="text-xs text-dentbot-teal font-semibold uppercase tracking-wider">Antes de la consulta</p>
+                  <p class="text-xs text-fisiobot-teal font-semibold uppercase tracking-wider">Antes de la consulta</p>
                   <p class="text-white font-bold">Ficha PRE · Para el odontólogo</p>
                 </div>
               </div>
               <ul class="space-y-2.5 text-sm text-gray-400 mb-5">
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Anamnesis estructurada completa</li>
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Alergias y medicamentos activos</li>
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Factores de riesgo identificados</li>
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-teal flex-shrink-0"></span>Alertas clínicas prioritarias</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-teal flex-shrink-0"></span>Anamnesis estructurada completa</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-teal flex-shrink-0"></span>Alergias y medicamentos activos</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-teal flex-shrink-0"></span>Factores de riesgo identificados</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-teal flex-shrink-0"></span>Alertas clínicas prioritarias</li>
               </ul>
               <p class="text-xs text-gray-500 italic">→ La revisas antes de que el paciente llegue al sillón</p>
             </div>
 
             <!-- Ficha POST -->
-            <div class="spotlight-card bg-dentbot-surface rounded-2xl p-7 border border-dentbot-gold/30">
+            <div class="spotlight-card bg-fisiobot-surface rounded-2xl p-7 border border-fisiobot-gold/30">
               <div class="flex items-center gap-3 mb-5">
-                <div class="w-10 h-10 rounded-lg bg-dentbot-gold/15 flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-dentbot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="w-10 h-10 rounded-lg bg-fisiobot-gold/15 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-fisiobot-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                   </svg>
                 </div>
                 <div>
-                  <p class="text-xs text-dentbot-gold font-semibold uppercase tracking-wider">Al terminar la consulta</p>
+                  <p class="text-xs text-fisiobot-gold font-semibold uppercase tracking-wider">Al terminar la consulta</p>
                   <p class="text-white font-bold">Ficha POST · Para el paciente</p>
                 </div>
               </div>
               <ul class="space-y-2.5 text-sm text-gray-400 mb-5">
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Resumen personalizado de la consulta</li>
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Recomendaciones post-tratamiento</li>
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Plan de seguimiento</li>
-                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-dentbot-gold flex-shrink-0"></span>Listo para compartir al finalizar la cita</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-gold flex-shrink-0"></span>Resumen personalizado de la consulta</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-gold flex-shrink-0"></span>Recomendaciones post-tratamiento</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-gold flex-shrink-0"></span>Plan de seguimiento</li>
+                <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-fisiobot-gold flex-shrink-0"></span>Listo para compartir al finalizar la cita</li>
               </ul>
               <p class="text-xs text-gray-500 italic">→ Lo compartes con el paciente antes de que salga del consultorio</p>
             </div>
           </div>
 
           <!-- Narrative timeline -->
-          <div class="bg-dentbot-surface-light/50 rounded-2xl px-6 py-5 border border-dentbot-surface-light">
-            <p class="text-center text-sm text-gray-400 mb-4 font-medium">Tu flujo de trabajo con DentBot</p>
+          <div class="bg-fisiobot-surface-light/50 rounded-2xl px-6 py-5 border border-fisiobot-surface-light">
+            <p class="text-center text-sm text-gray-400 mb-4 font-medium">Tu flujo de trabajo con FisioBot</p>
             <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
-              <span class="px-3 py-1.5 bg-dentbot-navy rounded-lg text-white font-medium">Llego al consultorio</span>
-              <svg class="w-4 h-4 text-dentbot-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-              <span class="px-3 py-1.5 bg-dentbot-teal/15 border border-dentbot-teal/30 rounded-lg text-dentbot-teal font-medium">Reviso la ficha PRE</span>
+              <span class="px-3 py-1.5 bg-fisiobot-navy rounded-lg text-white font-medium">Llego al consultorio</span>
+              <svg class="w-4 h-4 text-fisiobot-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="px-3 py-1.5 bg-fisiobot-teal/15 border border-fisiobot-teal/30 rounded-lg text-fisiobot-teal font-medium">Reviso la ficha PRE</span>
               <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-              <span class="px-3 py-1.5 bg-dentbot-navy rounded-lg text-white font-medium">Atiendo al paciente</span>
+              <span class="px-3 py-1.5 bg-fisiobot-navy rounded-lg text-white font-medium">Atiendo al paciente</span>
               <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-              <span class="px-3 py-1.5 bg-dentbot-gold/15 border border-dentbot-gold/30 rounded-lg text-dentbot-gold font-medium">Comparto la ficha POST</span>
+              <span class="px-3 py-1.5 bg-fisiobot-gold/15 border border-fisiobot-gold/30 rounded-lg text-fisiobot-gold font-medium">Comparto la ficha POST</span>
               <svg class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-              <span class="px-3 py-1.5 bg-dentbot-navy rounded-lg text-white font-medium">Paciente se va con su resumen</span>
+              <span class="px-3 py-1.5 bg-fisiobot-navy rounded-lg text-white font-medium">Paciente se va con su resumen</span>
             </div>
           </div>
         </div>
 
         <!-- Notion mockup placeholder -->
         <div class="mt-16 max-w-4xl mx-auto">
-          <div class="relative rounded-2xl overflow-hidden border border-dentbot-surface-light shadow-soft-lg">
+          <div class="relative rounded-2xl overflow-hidden border border-fisiobot-surface-light shadow-soft-lg">
             <!-- Browser chrome -->
-            <div class="bg-dentbot-surface-light px-4 py-3 flex items-center gap-2">
+            <div class="bg-fisiobot-surface-light px-4 py-3 flex items-center gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div class="w-3 h-3 rounded-full bg-green-500"></div>
-              <div class="ml-4 flex-1 bg-dentbot-navy rounded px-3 py-1 text-xs text-gray-400">
-                notion.so/DentBot/Anamnesis
+              <div class="ml-4 flex-1 bg-fisiobot-navy rounded px-3 py-1 text-xs text-gray-400">
+                notion.so/FisioBot/Pacientes
               </div>
             </div>
 
             <!-- Mockup content -->
-            <div class="bg-dentbot-navy aspect-video flex items-center justify-center">
+            <div class="bg-fisiobot-navy aspect-video flex items-center justify-center">
               <div class="text-center p-8">
-                <svg class="w-16 h-16 text-dentbot-teal mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-16 h-16 text-fisiobot-teal mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
                 </svg>
                 <p class="text-white font-semibold mb-2">Base de datos Notion</p>
@@ -699,17 +700,17 @@
     </section>
 
     <!-- OFERTA Section -->
-    <section class="py-20 sm:py-28 bg-dentbot-surface relative overflow-hidden">
+    <section class="py-20 sm:py-28 bg-fisiobot-surface relative overflow-hidden">
       <!-- Background decoration -->
-      <div class="absolute top-0 right-1/4 w-64 h-64 bg-dentbot-teal/5 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-dentbot-gold/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-0 right-1/4 w-64 h-64 bg-fisiobot-teal/5 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/4 w-64 h-64 bg-fisiobot-gold/5 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section header -->
         <div class="text-center mb-16">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Elige cómo empezar.<br>
-            <span class="text-dentbot-teal">Sin compromiso mensual.</span>
+            <span class="text-fisiobot-teal">Sin compromiso mensual.</span>
           </h2>
           <p class="text-lg text-gray-400 max-w-2xl mx-auto">
             Un solo pago. Para siempre. Sin sorpresas.
@@ -717,7 +718,7 @@
         </div>
 
         <!-- Scarcity / Progress Bar -->
-        <div class="max-w-4xl mx-auto mb-10 bg-dentbot-navy rounded-2xl px-6 py-5 border border-dentbot-surface-light">
+        <div class="max-w-4xl mx-auto mb-10 bg-fisiobot-navy rounded-2xl px-6 py-5 border border-fisiobot-surface-light">
           <div class="flex items-center justify-between mb-3">
             <div class="flex items-center gap-2">
               <span class="inline-block w-2 h-2 rounded-full bg-red-400 animate-pulse"></span>
@@ -725,11 +726,11 @@
             </div>
             <span class="text-sm font-bold text-white">40 de 48 cupos tomados</span>
           </div>
-          <div class="h-3 bg-dentbot-surface rounded-full overflow-hidden">
+          <div class="h-3 bg-fisiobot-surface rounded-full overflow-hidden">
             <div class="scarcity-bar-fill h-full rounded-full" style="width: 83.3%"></div>
           </div>
           <p class="text-center text-sm text-gray-400 mt-3">
-            Solo quedan <span class="font-bold text-dentbot-gold">8 cupos</span> a este precio — cuando se acaben, sube.
+            Solo quedan <span class="font-bold text-fisiobot-gold">8 cupos</span> a este precio — cuando se acaben, sube.
           </p>
         </div>
 
@@ -739,11 +740,11 @@
           <div class="gradient-border rounded-2xl relative">
             <!-- Most popular badge -->
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-              <span class="inline-block px-4 py-1 bg-dentbot-teal text-dentbot-navy text-sm font-bold rounded-full">
+              <span class="inline-block px-4 py-1 bg-fisiobot-teal text-fisiobot-navy text-sm font-bold rounded-full">
                 Más vendido
               </span>
             </div>
-            <div class="relative bg-dentbot-navy p-8 transition-all duration-300" style="border-radius:14px">
+            <div class="relative bg-fisiobot-navy p-8 transition-all duration-300" style="border-radius:14px">
 
             <div class="mb-6">
               <h3 class="text-2xl font-bold text-white mb-2">Setup Completo</h3>
@@ -760,41 +761,41 @@
             <!-- Features -->
             <ul class="space-y-4 mb-8">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Todo lo del Self-Setup</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Configuramos todo por ti</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Tu logo y colores en el form</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Sesión de onboarding 30 min</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-teal flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Soporte prioritario 30 días</span>
               </li>
-              <!-- Bonus: DentBot Copilot -->
-              <li class="flex items-start gap-3 mt-2 rounded-xl bg-dentbot-gold/10 border border-dentbot-gold/40 p-3 -mx-1">
-                <span class="text-dentbot-gold text-lg flex-shrink-0 mt-0.5">🎁</span>
+              <!-- Bonus: FisioBot Copilot -->
+              <li class="flex items-start gap-3 mt-2 rounded-xl bg-fisiobot-gold/10 border border-fisiobot-gold/40 p-3 -mx-1">
+                <span class="text-fisiobot-gold text-lg flex-shrink-0 mt-0.5">🎁</span>
                 <div>
-                  <p class="text-dentbot-gold font-bold text-sm uppercase tracking-wide mb-0.5">Bono gratuito</p>
-                  <p class="text-white font-semibold text-sm leading-snug">DentBot Copilot</p>
+                  <p class="text-fisiobot-gold font-bold text-sm uppercase tracking-wide mb-0.5">Bono gratuito</p>
+                  <p class="text-white font-semibold text-sm leading-snug">FisioBot Copilot</p>
                   <p class="text-gray-400 text-xs mt-0.5 leading-snug">Banco de conocimiento clínico con IA — papers, protocolos y guías de expertos, consultables en segundos.</p>
                 </div>
               </li>
@@ -805,7 +806,7 @@
               href="https://pay.hotmart.com/X105362860D?checkoutMode=10&bid=1776687108666"
               target="_blank"
               rel="noopener noreferrer"
-              class="block w-full py-4 text-center bg-dentbot-teal text-dentbot-navy font-bold rounded-lg hover:bg-dentbot-teal-dark transition-all duration-200 shadow-glow-teal"
+              class="block w-full py-4 text-center bg-fisiobot-teal text-fisiobot-navy font-bold rounded-lg hover:bg-fisiobot-teal-dark transition-all duration-200 shadow-glow-teal"
             >
               Quiero el setup completo
             </a>
@@ -813,7 +814,7 @@
           </div><!-- /gradient-border -->
 
           <!-- Tier 1: Self-Setup -->
-          <div class="relative spotlight-card bg-dentbot-navy rounded-2xl p-8 border border-dentbot-surface-light hover:border-dentbot-gold/50 transition-all duration-300 hover:shadow-soft-lg">
+          <div class="relative spotlight-card bg-fisiobot-navy rounded-2xl p-8 border border-fisiobot-surface-light hover:border-fisiobot-gold/50 transition-all duration-300 hover:shadow-soft-lg">
             <div class="mb-6">
               <h3 class="text-2xl font-bold text-white mb-2">Self-Setup</h3>
               <p class="text-gray-400 text-sm">Para el odontólogo hands-on</p>
@@ -829,25 +830,25 @@
             <!-- Features -->
             <ul class="space-y-4 mb-8">
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Plantilla de formulario Tally</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Instrucciones paso a paso</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Acceso a comunidad WhatsApp</span>
               </li>
               <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-dentbot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 text-fisiobot-gold flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                 </svg>
                 <span class="text-gray-300">Actualizaciones futuras</span>
@@ -859,7 +860,7 @@
               href="https://pay.hotmart.com/U105362980Y?checkoutMode=10&bid=1776686001319"
               target="_blank"
               rel="noopener noreferrer"
-              class="block w-full py-4 text-center border-2 border-dentbot-gold text-dentbot-gold font-semibold rounded-lg hover:bg-dentbot-gold hover:text-dentbot-navy transition-all duration-200"
+              class="block w-full py-4 text-center border-2 border-fisiobot-gold text-fisiobot-gold font-semibold rounded-lg hover:bg-fisiobot-gold hover:text-fisiobot-navy transition-all duration-200"
             >
               Empezar ahora
             </a>
@@ -867,16 +868,16 @@
         </div>
 
         <!-- Price anchor -->
-        <div class="max-w-2xl mx-auto bg-dentbot-navy rounded-xl p-6 border border-dentbot-surface-light">
+        <div class="max-w-2xl mx-auto bg-fisiobot-navy rounded-xl p-6 border border-fisiobot-surface-light">
           <div class="flex items-start gap-4">
-            <svg class="w-6 h-6 text-dentbot-gold flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 text-fisiobot-gold flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
             <div>
               <h4 class="text-white font-semibold mb-2">¿Te parece mucho?</h4>
               <p class="text-gray-400 text-sm leading-relaxed">
                 Un software odontológico tradicional cuesta <span class="text-white font-medium">$80-$200 USD/mes</span> (suscripción anual).
-                DentBot se paga solo con <span class="text-dentbot-teal font-semibold">1-2 pacientes nuevos</span>.
+                FisioBot se paga solo con <span class="text-fisiobot-teal font-semibold">1-2 pacientes nuevos</span>.
                 Y es un pago único, no mensual.
               </p>
             </div>
@@ -886,15 +887,15 @@
     </section>
 
     <!-- CTA FINAL Section -->
-    <section class="py-20 sm:py-28 bg-dentbot-navy relative overflow-hidden">
+    <section class="py-20 sm:py-28 bg-fisiobot-navy relative overflow-hidden">
       <!-- Background decoration -->
-      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-dentbot-teal/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-fisiobot-teal/10 rounded-full blur-3xl"></div>
 
       <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <!-- H2 -->
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
           Escríbeme y en 5 minutos ves cómo se ve<br>
-          <span class="text-dentbot-teal">la ficha que recibirías mañana</span>
+          <span class="text-fisiobot-teal">la ficha que recibirías mañana</span>
         </h2>
 
         <!-- Microcopy -->
@@ -907,7 +908,7 @@
 
         <!-- WhatsApp CTA Button -->
         <a
-          href="https://wa.me/573209974750?text=Hola,%20quiero%20ver%20una%20demo%20de%20DentBot%20para%20mi%20consultorio"
+          href="https://wa.me/573209974750?text=Hola,%20quiero%20ver%20una%20demo%20de%20FisioBot%20para%20mi%20consultorio"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-4 px-10 py-5 bg-[#25D366] text-white font-bold text-lg rounded-xl hover:bg-[#20BD5A] transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
@@ -921,10 +922,10 @@
         <!-- Secondary CTA -->
         <div class="mt-8">
           <a
-            href="https://wa.me/573209974750?text=Tengo%20una%20pregunta%20sobre%20DentBot"
+            href="https://wa.me/573209974750?text=Tengo%20una%20pregunta%20sobre%20FisioBot"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 text-gray-400 hover:text-dentbot-teal transition-colors duration-200"
+            class="inline-flex items-center gap-2 text-gray-400 hover:text-fisiobot-teal transition-colors duration-200"
           >
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.459 1.77-2.5 3.272-2.5 1.989 0 3.5 1.511 3.5 3.5 0 1.072-.508 2.023-1.282 2.656-.208.17-.326.422-.326.691v.879c0 .414.336.75.75.75h.25a.75.75 0 00.75-.75v-.616c0-.528.233-1.025.636-1.366 1.287-1.093 2.042-2.677 2.042-4.394 0-3.284-2.716-6-6-6-2.841 0-5.228 1.968-5.836 4.612m-2.06 3.54c-.16.568-.25 1.168-.25 1.79 0 3.309 2.691 6 6 6 .622 0 1.222-.09 1.79-.25"/>
@@ -938,12 +939,12 @@
   </main>
 
   <!-- Sticky CTA Bar (mobile) -->
-  <div id="stickyBar" class="fixed bottom-0 left-0 right-0 z-50 bg-dentbot-navy/95 backdrop-blur-glass border-t border-dentbot-surface-light py-4 px-4 transform translate-y-full transition-transform duration-300 lg:hidden">
+  <div id="stickyBar" class="fixed bottom-0 left-0 right-0 z-50 bg-fisiobot-navy/95 backdrop-blur-glass border-t border-fisiobot-surface-light py-4 px-4 transform translate-y-full transition-transform duration-300 lg:hidden">
     <a
       href="https://pay.hotmart.com/X105362860D?checkoutMode=10&bid=1776687108666"
       target="_blank"
       rel="noopener noreferrer"
-      class="block w-full py-3 bg-dentbot-teal text-dentbot-navy font-bold text-center rounded-lg hover:bg-dentbot-teal-dark transition-colors duration-200"
+      class="block w-full py-3 bg-fisiobot-teal text-fisiobot-navy font-bold text-center rounded-lg hover:bg-fisiobot-teal-dark transition-colors duration-200"
     >
       Empezar ahora →
     </a>
@@ -958,7 +959,7 @@
     <div class="relative w-full max-w-5xl" onclick="event.stopPropagation()">
       <!-- Close button -->
       <button
-        class="absolute -top-12 right-0 text-white hover:text-dentbot-teal transition-colors duration-200"
+        class="absolute -top-12 right-0 text-white hover:text-fisiobot-teal transition-colors duration-200"
         onclick="closeVideoModal()"
         aria-label="Cerrar video"
       >
@@ -974,7 +975,7 @@
           class="absolute inset-0 w-full h-full"
           src=""
           data-src="https://www.youtube.com/embed/s_D0gcyPH4A?autoplay=1&cc_load_policy=1&rel=0"
-          title="DentBot — Automatiza la anamnesis de tu consultorio con IA"
+          title="FisioBot — Automatiza la historia clínica de tu consulta con IA"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -984,17 +985,17 @@
   </div>
 
   <!-- Footer -->
-  <footer class="border-t border-dentbot-surface-light py-12 bg-dentbot-navy">
+  <footer class="border-t border-fisiobot-surface-light py-12 bg-fisiobot-navy">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-8 mb-8">
         <!-- Logo + description -->
         <div class="md:col-span-1">
           <div class="flex items-center gap-2 mb-4">
-            <svg class="w-8 h-8 text-dentbot-teal" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2C9.5 2 7.5 4 7.5 6.5C7.5 7.5 7.8 8.4 8.3 9.2C6.5 10.1 5 12 5 14.5C5 17.5 7.5 20 10.5 20H13.5C16.5 20 19 17.5 19 14.5C19 12 17.5 10.1 15.7 9.2C16.2 8.4 16.5 7.5 16.5 6.5C16.5 4 14.5 2 12 2ZM12 4C13.5 4 14.5 5 14.5 6.5C14.5 8 13.5 9 12 9C10.5 9 9.5 8 9.5 6.5C9.5 5 10.5 4 12 4ZM13.5 18H10.5C8.5 18 7 16.5 7 14.5C7 12.5 8.5 11 10.5 11H13.5C15.5 11 17 12.5 17 14.5C17 16.5 15.5 18 13.5 18Z"/>
+            <svg class="w-8 h-8 text-fisiobot-teal" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/>
             </svg>
             <div>
-              <span class="font-bold text-lg text-white block">DentBot</span>
+              <span class="font-bold text-lg text-white block">FisioBot</span>
               <span class="text-xs text-gray-500">by DailyDuty</span>
             </div>
           </div>
@@ -1010,7 +1011,7 @@
             href="https://wa.me/573209974750"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-gray-400 hover:text-dentbot-teal transition-colors duration-200 inline-flex items-center gap-2"
+            class="text-gray-400 hover:text-fisiobot-teal transition-colors duration-200 inline-flex items-center gap-2"
           >
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -1021,7 +1022,7 @@
             href="https://linktr.ee/dailyduty"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-gray-400 hover:text-dentbot-teal transition-colors duration-200 inline-flex items-center gap-2"
+            class="text-gray-400 hover:text-fisiobot-teal transition-colors duration-200 inline-flex items-center gap-2"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
@@ -1037,7 +1038,7 @@
             href="https://wa.me/573209974750"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-gray-400 hover:text-dentbot-teal transition-colors duration-200 block"
+            class="text-gray-400 hover:text-fisiobot-teal transition-colors duration-200 block"
           >
             +57 320 997 4750
           </a>
@@ -1045,13 +1046,13 @@
       </div>
 
       <!-- Bottom bar -->
-      <div class="border-t border-dentbot-surface-light pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="border-t border-fisiobot-surface-light pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-gray-500 text-sm text-center sm:text-left">
-          © 2026 DentBot — Instituto para el Desarrollo Diario (DailyDuty)
+          © 2026 FisioBot — Instituto para el Desarrollo Diario (DailyDuty)
         </p>
         <div class="flex items-center gap-6 text-sm">
-          <a href="#" class="text-gray-400 hover:text-dentbot-teal transition-colors duration-200">Términos</a>
-          <a href="#" class="text-gray-400 hover:text-dentbot-teal transition-colors duration-200">Privacidad</a>
+          <a href="#" class="text-gray-400 hover:text-fisiobot-teal transition-colors duration-200">Términos</a>
+          <a href="#" class="text-gray-400 hover:text-fisiobot-teal transition-colors duration-200">Privacidad</a>
         </div>
       </div>
     </div>
