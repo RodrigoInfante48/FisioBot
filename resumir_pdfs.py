@@ -8,11 +8,11 @@ from anthropic.types.messages.batch_create_params import Request
 
 client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
 
-FOLDER = r"C:\Users\rodri\OneDrive\Desktop\DentBot\DentBot Copilot"
+FOLDER = r"C:\Users\rodri\OneDrive\Desktop\FisioBot\FisioBot Copilot"
 OUTPUT = os.path.join(FOLDER, "resumen-copilot.md")
 
 SYSTEM_PROMPT = (
-    "Eres un asistente clínico dental. "
+    "Eres un asistente clínico especializado en fisioterapia y rehabilitación. "
     "Resume documentos en español con: título y fuente, tema principal (1 línea), "
     "y los 5 puntos clínicos más importantes y accionables."
 )
@@ -98,7 +98,7 @@ for result in client.messages.batches.results(batch.id):
 
 # ── 5. Write markdown output ───────────────────────────────────────────────
 with open(OUTPUT, "w", encoding="utf-8") as out:
-    out.write("# Resumen Consolidado — DentBot Copilot\n\n")
+    out.write("# Resumen Consolidado — FisioBot Copilot\n\n")
     for filename, custom_id, _ in pdf_data:
         summary = summaries.get(custom_id, "[Sin resultado]")
         out.write(f"## {filename}\n{summary}\n\n---\n\n")
