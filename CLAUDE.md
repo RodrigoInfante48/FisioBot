@@ -63,19 +63,10 @@ Cada decisión de diseño, copy y funcionalidad debe estar orientada a **remover
 
 | Producto | Precio | Canal | Estado |
 |---|---|---|---|
-| Self-Setup | $9.99 USD (pago único) | Hotmart | Por configurar |
-| Setup Completo | $33 USD (pago único) | Hotmart | Por configurar |
+| Setup Completo | $9.99 USD (pago único) | Hotmart | Por configurar |
 | FisioBot Copilot | Order bump en checkout Hotmart | Hotmart | Por configurar |
 
-### Self-Setup — $9.99
-- Plantilla de formulario Tally
-- Instrucciones paso a paso
-- Acceso a comunidad WhatsApp
-- Actualizaciones futuras
-- **Link de pago:** *(por definir — links Hotmart propios para FisioBot pendientes)*
-
-### Setup Completo — $33 ⭐ (más vendido)
-- Todo lo del Self-Setup
+### Setup Completo — $9.99 ⭐ (más vendido)
 - Configuración completa por el equipo FisioBot
 - Logo y colores del consultorio en el form
 - Sesión de onboarding de 30 minutos
@@ -87,8 +78,8 @@ Cada decisión de diseño, copy y funcionalidad debe estar orientada a **remover
 Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente con una biblioteca curada de documentos clínicos rigurosos sobre fisioterapia y rehabilitación. **No busca en internet. No improvisa.** Solo responde con base en esa bibliografía — respuestas precisas, trazables y alineadas con los estándares de la profesión.
 
 **Estrategia comercial:**
-- Incluido gratis como bono en el Setup Completo ($33)
-- Disponible como order bump en el checkout del Self-Setup ($9.99) — precio por definir
+- Incluido gratis como bono en el Setup Completo ($9.99)
+- Disponible como order bump en el checkout — precio por definir
 - Nombre oficial del cuaderno: *"Banco de conocimiento: protocolos clínicos y gestión de pacientes — FisioBot Copilot"*
 
 **Áreas de conocimiento (por definir):**
@@ -122,19 +113,7 @@ La biblioteca de documentos del FisioBot Copilot está pendiente de curaduría. 
 
 Lo que recibe cada comprador inmediatamente después de pagar en Hotmart.
 
-### Self-Setup ($9.99)
-El comprador recibe `FisioBot_Plantilla_Bienvenida.pdf` con:
-1. **Acceder al link de FisioBot** — formulario Tally preconfigurado
-2. **Registrar un paciente de prueba** — ficticio o real; la IA genera ambas fichas en segundos
-3. **Revisar las fichas en Notion** — Ficha PRE (para el fisioterapeuta) y Ficha POST (para el paciente)
-
-**Tips clave que se le comunican al comprador:**
-- Ser detallado en el formulario = fichas más precisas
-- Compartir la ficha POST por WhatsApp o imprimirla = diferenciador frente a otros centros de rehabilitación
-- Revisar la ficha PRE 10 minutos antes de cada sesión = llegar preparado
-- Funciona perfecto desde el celular, sin computador
-
-### Setup Completo ($33)
+### Setup Completo ($9.99)
 El comprador recibe `FisioBot_Premium_Bienvenida.pdf` con instrucciones para agendar. El proceso es:
 1. **WhatsApp al fundador** — mensaje prefabricado, solo presionar enviar
 2. **Respuesta en menos de 2 horas** — Rodrigo confirma la compra y coordina horario
@@ -142,7 +121,7 @@ El comprador recibe `FisioBot_Premium_Bienvenida.pdf` con instrucciones para age
 4. **Prueba con paciente real o ficticio** — se valida que todo funciona antes de terminar
 5. **Soporte prioritario activo** — cualquier ajuste posterior tiene respuesta prioritaria
 
-### FisioBot Copilot (bono del $33 / order bump del $9.99)
+### FisioBot Copilot (bono del $9.99 / order bump)
 El comprador recibe `FisioBot Copilot — Guía de Acceso.pdf` con:
 - Enlace único encriptado al cuaderno en Google NotebookLM
 - Vinculado al ID de compra en Hotmart (política anti-sharing)
@@ -234,9 +213,8 @@ La landing page `index.html` ES la VSL (Video Sales Letter). Sigue esta estructu
 ### Documentos de entrega al comprador
 | Archivo | Plan | Contenido |
 |---------|------|-----------|
-| `FisioBot_Plantilla_Bienvenida.pdf` | Self-Setup ($9.99) | Bienvenida + instrucciones de activación en 3 pasos |
-| `FisioBot_Premium_Bienvenida.pdf` | Setup Completo ($33) | Bienvenida premium + instrucciones para agendar set-up personalizado |
-| `FisioBot Copilot — Guía de Acceso.pdf` | Copilot (ambos planes) | Acceso al cuaderno NotebookLM + política de uso |
+| `FisioBot_Premium_Bienvenida.pdf` | Setup Completo ($9.99) | Bienvenida + instrucciones para agendar set-up personalizado |
+| `FisioBot Copilot — Guía de Acceso.pdf` | Copilot (bono incluido) | Acceso al cuaderno NotebookLM + política de uso |
 
 ### Recursos de contenido (YouTube)
 Videos de referencia usados para construir el conocimiento del proyecto:
@@ -293,7 +271,7 @@ git push -u origin main
 - [x] CLAUDE.md reescrito completamente para FisioBot
 
 ### Pendiente
-- [ ] Links de pago Hotmart propios para FisioBot (Self-Setup y Setup Completo)
+- [ ] Link de pago Hotmart propio para FisioBot (Setup Completo)
 - [ ] OG image actualizada con identidad visual de FisioBot
 - [ ] Video demo propio de FisioBot (actualmente usa video de DentBot)
 - [ ] Sección 2 — Hero adaptado al dolor del fisioterapeuta
@@ -302,6 +280,6 @@ git push -u origin main
 - [ ] Sección 5 — Oferta/precios con links Hotmart de FisioBot
 - [ ] Sección 6 — CTA final y Footer con marca FisioBot
 - [ ] Contenido de la biblioteca FisioBot Copilot (curaduría con especialistas pendiente)
-- [ ] Configurar FisioBot Copilot como order bump en Hotmart para el plan $9.99
+- [ ] Configurar FisioBot Copilot como order bump en Hotmart
 - [ ] Definir precio del order bump del Copilot
 - [ ] Testimoniales reales de fisioterapeutas
