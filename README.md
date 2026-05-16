@@ -67,13 +67,7 @@ Router automático genera DOS fichas simultáneas en Notion
 
 ## Elige tu plan — pago único, sin suscripción mensual
 
-<table>
-<tr>
-<th width="50%">⭐ Setup Completo — $33 USD</th>
-<th width="50%">Self-Setup — $9.99 USD</th>
-</tr>
-<tr>
-<td>
+### ⭐ Setup Completo — $9.99 USD
 
 **El más elegido. El más completo.**
 
@@ -85,28 +79,7 @@ Router automático genera DOS fichas simultáneas en Notion
 ✅ Soporte prioritario por 30 días<br>
 🎁 **FisioBot Copilot incluido GRATIS** (vale más que el plan solo)
 
-<br>
-
 **[→ Quiero el Setup Completo](https://wa.me/573209974750)**
-
-</td>
-<td>
-
-**Entra al sistema tú mismo.**
-
-✅ Plantilla del formulario Tally lista para usar<br>
-✅ Instrucciones paso a paso<br>
-✅ Acceso a comunidad WhatsApp<br>
-✅ Actualizaciones futuras incluidas<br>
-➕ FisioBot Copilot disponible como add-on en el checkout
-
-<br><br><br><br>
-
-**[→ Quiero el Self-Setup](https://wa.me/573209974750)**
-
-</td>
-</tr>
-</table>
 
 > 💡 **Ancla de precio:** Los softwares de gestión clínica tradicionales cobran $80–$200 USD al mes. FisioBot es **pago único**. Sin renovaciones. Sin sorpresas. Para siempre.
 
@@ -114,7 +87,7 @@ Router automático genera DOS fichas simultáneas en Notion
 
 ## 🤖 FisioBot Copilot — Tu segundo cerebro clínico
 
-**Incluido gratis en el Setup Completo. Disponible como add-on en el Self-Setup.**
+**Incluido gratis en el Setup Completo.**
 
 Mientras FisioBot automatiza la historia clínica, el Copilot te acompaña *dentro* de la sesión.
 
@@ -165,17 +138,12 @@ La curaduría de documentos está en proceso con especialistas en fisioterapia y
 
 ## Lo que pasa después de que compras
 
-### Si eliges el Setup Completo ($33):
+### Setup Completo ($9.99):
 1. Recibes el PDF de bienvenida con un mensaje de WhatsApp listo para enviar
 2. Rodrigo confirma tu compra y coordina horario — respuesta en menos de 2 horas
 3. Sesión de set-up en vivo (20-40 min): formulario personalizado a tu especialidad, fichas con la identidad de tu consultorio, prueba con paciente real o ficticio
 4. Sales con todo funcionando y soporte prioritario activo por 30 días
 5. Recibes acceso al FisioBot Copilot — tu segundo cerebro clínico, listo para usar
-
-### Si eliges el Self-Setup ($9.99):
-1. Recibes la plantilla Tally preconfigurada
-2. Registras un paciente de prueba — las fichas se generan en segundos
-3. Revisas la Ficha PRE y la Ficha POST en tu Notion
 
 ---
 
@@ -209,8 +177,7 @@ No es una táctica. Es la realidad de un producto que se está distribuyendo act
 
 **Puedes ser de los primeros. O puedes seguir perdiendo 10 minutos por paciente.**
 
-[![Quiero el Setup Completo — $33](https://img.shields.io/badge/⭐_Setup_Completo-$33_USD_→-00E6C7?style=for-the-badge)](https://wa.me/573209974750)
-[![Quiero el Self-Setup — $9.99](https://img.shields.io/badge/Self--Setup-$9.99_USD_→-FFB800?style=for-the-badge)](https://wa.me/573209974750)
+[![Quiero el Setup Completo — $9.99](https://img.shields.io/badge/⭐_Setup_Completo-$9.99_USD_→-00E6C7?style=for-the-badge)](https://wa.me/573209974750)
 
 ¿Tienes dudas? Escríbele directamente a Rodrigo: [WhatsApp +57 320 997 4750](https://wa.me/573209974750)
 
