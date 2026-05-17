@@ -61,18 +61,24 @@ Cada decisión de diseño, copy y funcionalidad debe estar orientada a **remover
 
 ## Productos y precios
 
+> **ACTUALIZACIÓN (mayo 2026):** Solo existe UN producto. El tier de $33 fue eliminado. Todo lo que incluía el $33 fue absorbido por el $9.99. FisioBot se vende únicamente a $9.99 USD pago único.
+
 | Producto | Precio | Canal | Estado |
 |---|---|---|---|
-| Setup Completo | $9.99 USD (pago único) | Hotmart | Por configurar |
-| FisioBot Copilot | Order bump en checkout Hotmart | Hotmart | Por configurar |
+| FisioBot Setup Completo | $9.99 USD (pago único) | Hotmart | ✅ ACTIVO |
+| FisioBot Copilot | Bono incluido en $9.99 | — | ✅ Incluido gratis |
 
-### Setup Completo — $9.99 ⭐ (más vendido)
+**Link de pago activo:** `https://pay.hotmart.com/X105362860D?checkoutMode=10&bid=1776687108666`
+
+**Workspace del producto (Notion):** `https://dailyduty48.notion.site/?v=35e4f515cfb081b5a2c9000c6ef4acb3`
+
+### FisioBot Setup Completo — $9.99 ⭐ (único producto)
+- Acceso al workspace FisioBot en Notion (el producto en sí — listo para usar)
 - Configuración completa por el equipo FisioBot
 - Logo y colores del consultorio en el form
 - Sesión de onboarding de 30 minutos
 - Soporte prioritario por 30 días
-- **🎁 Bono gratuito: FisioBot Copilot** (ver abajo)
-- **Link de pago:** *(por definir — links Hotmart propios para FisioBot pendientes)*
+- **🎁 Bono gratuito: FisioBot Copilot** (incluido, no es order bump)
 
 ### FisioBot Copilot (bono + order bump)
 Asistente de IA clínica alojado en Google NotebookLM, entrenado exclusivamente con una biblioteca curada de documentos clínicos rigurosos sobre fisioterapia y rehabilitación. **No busca en internet. No improvisa.** Solo responde con base en esa bibliografía — respuestas precisas, trazables y alineadas con los estándares de la profesión.
@@ -264,22 +270,19 @@ git push -u origin main
 
 ---
 
-## Estado del arte (al 22 de abril de 2026)
+## Estado del arte (al 17 de mayo de 2026)
 
 ### Hecho
-- [x] Sección 1 — Renombrado global de marca DentBot → FisioBot en `index.html`
+- [x] Renombrado global de marca DentBot → FisioBot en `index.html`
 - [x] CLAUDE.md reescrito completamente para FisioBot
+- [x] Landing page completa con único tier $9.99 (tier de $33 eliminado)
+- [x] Link de pago Hotmart activo: `https://pay.hotmart.com/X105362860D?checkoutMode=10&bid=1776687108666`
+- [x] Producto FisioBot publicado y disponible en Notion: `https://dailyduty48.notion.site/?v=35e4f515cfb081b5a2c9000c6ef4acb3`
+- [x] Documento de entrega para compradores Hotmart: `fisiobot-acceso.html` (convertir a PDF antes de subir a Hotmart)
+- [x] Estrategia comercial definida: un solo producto a $9.99, FisioBot Copilot incluido como bono (no order bump)
 
 ### Pendiente
-- [ ] Link de pago Hotmart propio para FisioBot (Setup Completo)
+- [ ] Convertir `fisiobot-acceso.html` a PDF y subirlo como entregable en Hotmart
 - [ ] OG image actualizada con identidad visual de FisioBot
 - [ ] Video demo propio de FisioBot (actualmente usa video de DentBot)
-- [ ] Sección 2 — Hero adaptado al dolor del fisioterapeuta
-- [ ] Sección 3 — Dolor adaptado (evaluación repetitiva, planes sin registro, abandono de tratamiento)
-- [ ] Sección 4 — Solución adaptada con fichas PRE/POST de fisioterapia
-- [ ] Sección 5 — Oferta/precios con links Hotmart de FisioBot
-- [ ] Sección 6 — CTA final y Footer con marca FisioBot
-- [ ] Contenido de la biblioteca FisioBot Copilot (curaduría con especialistas pendiente)
-- [ ] Configurar FisioBot Copilot como order bump en Hotmart
-- [ ] Definir precio del order bump del Copilot
 - [ ] Testimoniales reales de fisioterapeutas
