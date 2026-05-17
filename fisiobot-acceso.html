@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FisioBot — Acceso al Producto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .page {
+      background: white;
+      max-width: 640px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a2e;
+      padding: 40px 48px 36px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo-dot {
+      width: 10px; height: 10px;
+      background: #00E6C7;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: 800;
+      color: white;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text span { color: #00E6C7; }
+
+    .badge {
+      display: inline-block;
+      background: rgba(0,230,199,0.12);
+      border: 1px solid rgba(0,230,199,0.35);
+      color: #00E6C7;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: white;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .header h1 span { color: #00E6C7; }
+
+    .header p {
+      color: #8899aa;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Body */
+    .body { padding: 40px 48px; }
+
+    .greeting {
+      font-size: 16px;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      border-left: 3px solid #00E6C7;
+      padding-left: 16px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 16px;
+    }
+
+    /* Includes list */
+    .includes {
+      list-style: none;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .includes li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.5;
+    }
+
+    .check {
+      width: 20px; height: 20px;
+      background: rgba(0,230,199,0.12);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .check svg { width: 11px; height: 11px; }
+
+    .bonus-box {
+      background: linear-gradient(135deg, #fffbeb, #fef3c7);
+      border: 1.5px solid #FFB800;
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .bonus-icon { font-size: 24px; flex-shrink: 0; }
+
+    .bonus-box h4 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #92400e;
+      margin-bottom: 3px;
+    }
+
+    .bonus-box p {
+      font-size: 13px;
+      color: #78350f;
+      line-height: 1.5;
+    }
+
+    /* CTA Button */
+    .cta-wrap { text-align: center; margin-bottom: 32px; }
+
+    .cta-btn {
+      display: inline-block;
+      background: #00E6C7;
+      color: #1a1a2e;
+      font-weight: 800;
+      font-size: 16px;
+      padding: 18px 48px;
+      border-radius: 12px;
+      text-decoration: none;
+      letter-spacing: -0.2px;
+      transition: background 0.2s;
+      box-shadow: 0 4px 20px rgba(0,230,199,0.30);
+    }
+
+    .cta-btn:hover { background: #00C4B0; }
+
+    .cta-url {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #9ca3af;
+      word-break: break-all;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid #f0f0f0;
+      margin: 32px 0;
+    }
+
+    /* Next steps */
+    .steps { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .step-num {
+      width: 28px; height: 28px;
+      background: #1a1a2e;
+      color: #00E6C7;
+      font-size: 13px;
+      font-weight: 800;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 2px;
+    }
+
+    .step-text span {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .footer {
+      background: #f9fafb;
+      border-top: 1px solid #f0f0f0;
+      padding: 28px 48px;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: #9ca3af;
+      line-height: 1.6;
+    }
+
+    .footer strong { color: #374151; }
+
+    .footer a {
+      color: #00C4B0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Print */
+    @media print {
+      body { background: white; padding: 0; }
+      .page { box-shadow: none; border-radius: 0; max-width: 100%; }
+      .cta-btn { background: #00E6C7 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="logo-line">
+        <div class="logo-dot"></div>
+        <div class="logo-text">Fisio<span>Bot</span></div>
+        <div class="logo-dot"></div>
+      </div>
+      <div class="badge">Acceso confirmado</div>
+      <h1>Tu sistema ya está<br><span>listo para usar</span></h1>
+      <p>Gracias por confiar en FisioBot. Aquí tienes todo lo que necesitas<br>para empezar desde hoy.</p>
+    </div>
+
+    <!-- BODY -->
+    <div class="body">
+
+      <p class="greeting">
+        Bienvenido al equipo. Al comprar FisioBot tomaste una decisión que la mayoría de fisioterapeutas todavía no se ha atrevido a tomar: automatizar lo que te quita tiempo para concentrarte en lo que importa — <strong>rehabilitar a tu paciente.</strong>
+      </p>
+
+      <!-- Includes -->
+      <div class="section-title">Lo que obtuviste</div>
+      <ul class="includes">
+        <li>
+          <div class="check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="#00E6C7" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2 6l3 3 5-5"/>
+            </svg>
+          </div>
+          Sistema FisioBot completo — Tally + Make.com + Gemini AI + Notion conectados y funcionando
+        </li>
+        <li>
+          <div class="check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="#00E6C7" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2 6l3 3 5-5"/>
+            </svg>
+          </div>
+          Fichas clínicas automáticas — PRE-sesión para ti y POST-sesión para tu paciente, generadas por IA
+        </li>
+        <li>
+          <div class="check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="#00E6C7" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2 6l3 3 5-5"/>
+            </svg>
+          </div>
+          Configuración personalizada — logo, colores y preguntas adaptadas a tu especialidad
+        </li>
+        <li>
+          <div class="check">
+            <svg fill="none" viewBox="0 0 12 12" stroke="#00E6C7" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2 6l3 3 5-5"/>
+            </svg>
+          </div>
+          Sesión de onboarding 1:1 (30 min) + soporte prioritario por 30 días
+        </li>
+      </ul>
+
+      <!-- Bonus -->
+      <div class="bonus-box">
+        <div class="bonus-icon">🎁</div>
+        <div>
+          <h4>Bono incluido</h4>
+          <p><strong>FisioBot Copilot</strong> — Asistente de IA clínica entrenado con papers y protocolos de fisioterapia. Consulta contraindicaciones, banderas rojas y planes de ejercicio respaldados por evidencia, en segundos.</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-wrap">
+        <div class="section-title">Accede al sistema aquí</div>
+        <a
+          class="cta-btn"
+          href="https://dailyduty48.notion.site/?v=35e4f515cfb081b5a2c9000c6ef4acb3"
+          target="_blank"
+        >
+          Abrir FisioBot →
+        </a>
+        <div class="cta-url">https://dailyduty48.notion.site/?v=35e4f515cfb081b5a2c9000c6ef4acb3</div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Next steps -->
+      <div class="section-title">Próximos pasos</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <strong>Haz clic en el botón de arriba</strong>
+            <span>Accedes directamente al workspace de FisioBot en Notion — sin apps, sin instalación.</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <strong>Escríbeme por WhatsApp</strong>
+            <span>Coordino contigo la sesión de onboarding para personalizar el sistema a tu consultorio.</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <strong>Primera ficha real en menos de 24 h</strong>
+            <span>Tu próximo paciente llena el formulario y FisioBot genera su historia clínica automáticamente.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p>
+        ¿Alguna duda? Escríbeme directamente.<br>
+        <strong>Rodrigo Infante — Fundador de FisioBot</strong><br>
+        <a href="https://wa.me/573209974750">WhatsApp: +57 320 997 4750</a> · roesinf2@gmail.com
+      </p>
+      <p style="margin-top:12px; font-size:11px;">
+        FisioBot by DailyDuty / Instituto para el Desarrollo Diario
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>
