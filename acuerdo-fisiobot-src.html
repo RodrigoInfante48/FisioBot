@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #1a1a2e;
+    width: 210mm;
+    min-height: 297mm;
+  }
+
+  .header {
+    background: #1a1a2e;
+    padding: 36px 56px 32px;
+  }
+
+  .logo-line {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .dot { width: 7px; height: 7px; background: #00E6C7; border-radius: 50%; }
+
+  .logo-text { font-size: 18px; font-weight: 900; color: white; letter-spacing: -0.5px; }
+  .logo-text span { color: #00E6C7; }
+
+  .doc-type {
+    font-size: 10px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: #7a8fa8; margin-bottom: 8px;
+  }
+
+  .doc-title {
+    font-size: 22px; font-weight: 900; color: white;
+    line-height: 1.25; letter-spacing: -0.5px;
+  }
+
+  .doc-title span { color: #00E6C7; }
+
+  .body { padding: 40px 56px 48px; }
+
+  .intro {
+    font-size: 13px; color: #4b5563; line-height: 1.75;
+    margin-bottom: 32px;
+    border-left: 3px solid #00E6C7;
+    padding-left: 16px;
+  }
+
+  /* Partes */
+  .partes-grid {
+    display: flex; gap: 16px; margin-bottom: 32px;
+  }
+
+  .parte-box {
+    flex: 1;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+
+  .parte-label {
+    font-size: 9px; font-weight: 800; letter-spacing: 2px;
+    text-transform: uppercase; color: #9ca3af; margin-bottom: 6px;
+  }
+
+  .parte-role {
+    font-size: 13px; font-weight: 800; color: #1a1a2e; margin-bottom: 4px;
+  }
+
+  .parte-name {
+    font-size: 13px; color: #374151; margin-bottom: 2px;
+  }
+
+  .parte-detail {
+    font-size: 11px; color: #9ca3af;
+  }
+
+  /* Sección */
+  .section {
+    margin-bottom: 28px;
+  }
+
+  .section-num {
+    display: inline-block;
+    background: #1a1a2e;
+    color: #00E6C7;
+    font-size: 10px; font-weight: 800;
+    padding: 3px 9px; border-radius: 5px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .section-title {
+    font-size: 13px; font-weight: 800; color: #1a1a2e;
+    margin-bottom: 10px; text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .section-body {
+    font-size: 12.5px; color: #374151; line-height: 1.75;
+  }
+
+  .section-body p { margin-bottom: 8px; }
+  .section-body p:last-child { margin-bottom: 0; }
+
+  /* Tabla de fases */
+  .fases-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 12px;
+  }
+
+  .fases-table th {
+    background: #1a1a2e;
+    color: #00E6C7;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: left;
+  }
+
+  .fases-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #f3f4f6;
+    color: #374151;
+    vertical-align: top;
+  }
+
+  .fases-table tr:last-child td { border-bottom: none; }
+
+  .fases-table tr:nth-child(even) td { background: #f9fafb; }
+
+  .highlight { color: #1a1a2e; font-weight: 800; }
+  .teal { color: #00A896; font-weight: 800; }
+
+  /* Divider */
+  .divider {
+    border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;
+  }
+
+  /* Firmas */
+  .firmas {
+    display: flex; gap: 32px; margin-top: 36px;
+  }
+
+  .firma-box {
+    flex: 1;
+    padding-top: 16px;
+    border-top: 2px solid #1a1a2e;
+  }
+
+  .firma-role {
+    font-size: 10px; font-weight: 800; letter-spacing: 1.5px;
+    text-transform: uppercase; color: #9ca3af; margin-bottom: 4px;
+  }
+
+  .firma-name {
+    font-size: 13px; font-weight: 800; color: #1a1a2e; margin-bottom: 2px;
+  }
+
+  .firma-detail { font-size: 11px; color: #9ca3af; }
+
+  .firma-fecha {
+    margin-top: 20px;
+    font-size: 11px; color: #9ca3af;
+  }
+
+  /* Footer */
+  .footer {
+    background: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    padding: 20px 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer p { font-size: 10px; color: #9ca3af; line-height: 1.6; }
+  .footer-brand { font-size: 9px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: #d1d5db; text-align: right; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo-line">
+      <div class="dot"></div>
+      <div class="logo-text">Fisio<span>Bot</span></div>
+    </div>
+    <div class="doc-type">Acuerdo privado de licencia y distribución comercial</div>
+    <div class="doc-title">Acuerdo de operación<br><span>FisioBot — Propiedad Intelectual</span></div>
+  </div>
+
+  <div class="body">
+
+    <p class="intro">
+      Este documento establece los términos bajo los cuales las partes acuerdan colaborar
+      en la distribución y operación comercial del producto digital FisioBot,
+      reconociendo la propiedad intelectual del creador y la contribución comercial del operador.
+    </p>
+
+    <!-- Partes -->
+    <div class="partes-grid">
+      <div class="parte-box">
+        <div class="parte-label">Parte A — Creador / Licenciante</div>
+        <div class="parte-role">Rodrigo Infante</div>
+        <div class="parte-name">Propietario de la IP</div>
+        <div class="parte-detail">DailyDuty / Instituto para el Desarrollo Diario</div>
+      </div>
+      <div class="parte-box">
+        <div class="parte-label">Parte B — Operadora / Licenciataria</div>
+        <div class="parte-role">___________________________</div>
+        <div class="parte-name">Fisioterapeuta / Vendedora</div>
+        <div class="parte-detail">Número de identificación: _______________</div>
+      </div>
+    </div>
+
+    <!-- Cláusula 1 -->
+    <div class="section">
+      <div class="section-num">01</div>
+      <div class="section-title">Objeto del acuerdo</div>
+      <div class="section-body">
+        <p>
+          El presente acuerdo regula la colaboración entre las partes para la distribución comercial
+          de <strong>FisioBot</strong>, sistema de automatización de historia clínica para fisioterapeutas,
+          compuesto por flujos de automatización en Make.com, formularios Tally, integración con
+          Gemini AI y workspace en Notion.
+        </p>
+        <p>
+          La <strong>Parte A</strong> es y seguirá siendo la única propietaria de la marca, el sistema,
+          los flujos de automatización, el código, los prompts de IA y cualquier
+          desarrollo presente o futuro de FisioBot. Este acuerdo no transfiere propiedad intelectual —
+          únicamente otorga una licencia de operación comercial a la Parte B bajo las condiciones aquí descritas.
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Cláusula 2 -->
+    <div class="section">
+      <div class="section-num">02</div>
+      <div class="section-title">Estructura de distribución — Dos fases</div>
+      <div class="section-body">
+        <p>Las partes acuerdan una estructura de distribución en dos fases, determinadas por el
+        volumen acumulado de ventas brutas generadas a través de la plataforma Hotmart:</p>
+      </div>
+
+      <table class="fases-table">
+        <tr>
+          <th>Fase</th>
+          <th>Condición</th>
+          <th>Parte A (Rodrigo)</th>
+          <th>Parte B (Operadora)</th>
+          <th>Razón</th>
+        </tr>
+        <tr>
+          <td><span class="highlight">Fase 1</span><br>Despegue</td>
+          <td>Desde $0 hasta $1,000 USD acumulados en ventas brutas</td>
+          <td><span class="highlight">80%</span> del neto tras comisión Hotmart</td>
+          <td><span class="teal">20%</span> del neto — vía comisión de afiliada en Hotmart</td>
+          <td>Período de validación del mercado y recuperación de inversión en la IP</td>
+        </tr>
+        <tr>
+          <td><span class="teal">Fase 2</span><br>Escala</td>
+          <td>A partir de $1,000 USD acumulados (umbral alcanzado)</td>
+          <td><span class="highlight">20%</span> como licencia de propiedad intelectual</td>
+          <td><span class="teal">80%</span> como operadora y vendedora principal</td>
+          <td>La Parte B asume la operación completa; la Parte A percibe royalty pasivo por la IP</td>
+        </tr>
+      </table>
+
+      <div class="section-body" style="margin-top:12px;">
+        <p>
+          El <strong>neto</strong> se calcula sobre el ingreso recibido después de las comisiones
+          de plataforma de Hotmart. El seguimiento del monto acumulado se realizará con base en
+          el historial de ventas visible en el panel de Hotmart, accesible para ambas partes.
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Cláusula 3 -->
+    <div class="section">
+      <div class="section-num">03</div>
+      <div class="section-title">Pagos y liquidación</div>
+      <div class="section-body">
+        <p>
+          Durante la <strong>Fase 1</strong>, la Parte B recibe su 20% directamente de Hotmart
+          como afiliada registrada. No requiere gestión manual entre las partes.
+          La Parte A recibe el remanente directamente en su cuenta de creador.
+        </p>
+        <p>
+          Durante la <strong>Fase 2</strong>, el producto opera bajo la cuenta de la Parte B en Hotmart
+          o bajo acuerdo de transferencia mensual. El 20% correspondiente a la Parte A
+          se liquidará dentro de los primeros <strong>5 días hábiles de cada mes</strong>,
+          vía transferencia bancaria o medio acordado por escrito.
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Cláusula 4 -->
+    <div class="section">
+      <div class="section-num">04</div>
+      <div class="section-title">Propiedad intelectual y uso de marca</div>
+      <div class="section-body">
+        <p>
+          FisioBot, sus flujos, prompts, diseños y marca son propiedad exclusiva de la Parte A.
+          La Parte B podrá usar la marca y el sistema únicamente para los fines comerciales
+          descritos en este acuerdo y mientras el acuerdo esté vigente.
+        </p>
+        <p>
+          Queda expresamente prohibido que la Parte B modifique, replique, sublicencie, venda
+          o transfiera a terceros el sistema FisioBot o cualquiera de sus componentes,
+          sin autorización escrita previa de la Parte A.
+        </p>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- Cláusula 5 -->
+    <div class="section">
+      <div class="section-num">05</div>
+      <div class="section-title">Vigencia y terminación</div>
+      <div class="section-body">
+        <p>
+          Este acuerdo entra en vigencia en la fecha de firma y se mantiene activo de forma indefinida,
+          salvo que alguna de las partes notifique su intención de terminarlo con un mínimo de
+          <strong>30 días de anticipación</strong> por escrito (WhatsApp o correo electrónico válidos como evidencia).
+        </p>
+        <p>
+          En caso de terminación, las ventas realizadas hasta la fecha de notificación
+          se liquidan bajo los términos vigentes. La Parte A retiene todos los derechos
+          sobre la IP en cualquier escenario de terminación.
+        </p>
+      </div>
+    </div>
+
+    <!-- Firmas -->
+    <div class="firmas">
+      <div class="firma-box">
+        <div class="firma-role">Parte A — Creador / Licenciante</div>
+        <div class="firma-name">Rodrigo Infante</div>
+        <div class="firma-detail">DailyDuty / Instituto para el Desarrollo Diario</div>
+        <div class="firma-fecha">Firma: _____________________ &nbsp;&nbsp; Fecha: ___________</div>
+      </div>
+      <div class="firma-box">
+        <div class="firma-role">Parte B — Operadora / Licenciataria</div>
+        <div class="firma-name">___________________________</div>
+        <div class="firma-detail">C.C. / ID: ___________________________</div>
+        <div class="firma-fecha">Firma: _____________________ &nbsp;&nbsp; Fecha: ___________</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>
+      Documento privado de carácter vinculante entre las partes firmantes.<br>
+      Válido como prueba en caso de disputa junto al historial de comunicaciones escritas.
+    </p>
+    <div class="footer-brand">FisioBot by DailyDuty<br>Instituto para el<br>Desarrollo Diario</div>
+  </div>
+
+</body>
+</html>
